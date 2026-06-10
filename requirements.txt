@@ -1,0 +1,11 @@
+# Analysis-only (CPU)
+numpy>=1.24
+scipy>=1.11
+scikit-learn>=1.3
+
+# Judge runners (GPU)
+torch>=2.1
+transformers>=4.40
+accelerate>=0.28
+bitsandbytes>=0.43
+sentencepiece>=0.1.99
