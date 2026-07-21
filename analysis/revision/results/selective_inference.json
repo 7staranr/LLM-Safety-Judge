@@ -1,0 +1,304 @@
+{
+  "tau": 0.5,
+  "B": 2000,
+  "theta_full_data": {
+    "qwen7b": 0.6905,
+    "llama3b": 0.6429,
+    "mistral7b": 0.1429,
+    "llamaguard3_1b": 0.6905,
+    "llama31_8b": 0.5,
+    "gemma2_9b": 0.7857,
+    "phi3_medium": 0.9524,
+    "wildguard": 0.8049,
+    "shieldgemma_9b": 0.3333
+  },
+  "mc": {
+    "unadjusted": {
+      "50": {
+        "emit_rate": 0.1495,
+        "n_emit": 299,
+        "coverage": 0.9833,
+        "false_pass": 0.0
+      },
+      "100": {
+        "emit_rate": 0.8955,
+        "n_emit": 1791,
+        "coverage": 0.9793,
+        "false_pass": 0.0
+      },
+      "150": {
+        "emit_rate": 0.9965,
+        "n_emit": 1993,
+        "coverage": 0.9729,
+        "false_pass": 0.0
+      },
+      "200": {
+        "emit_rate": 1.0,
+        "n_emit": 2000,
+        "coverage": 0.9825,
+        "false_pass": 0.0
+      },
+      "300": {
+        "emit_rate": 1.0,
+        "n_emit": 2000,
+        "coverage": 0.972,
+        "false_pass": 0.0
+      }
+    },
+    "bonferroni": {
+      "50": {
+        "emit_rate": 0.1075,
+        "n_emit": 215,
+        "coverage": 0.9767,
+        "false_pass": 0.0
+      },
+      "100": {
+        "emit_rate": 0.7525,
+        "n_emit": 1505,
+        "coverage": 0.9748,
+        "false_pass": 0.0
+      },
+      "150": {
+        "emit_rate": 0.964,
+        "n_emit": 1928,
+        "coverage": 0.9715,
+        "false_pass": 0.0
+      },
+      "200": {
+        "emit_rate": 0.997,
+        "n_emit": 1994,
+        "coverage": 0.9824,
+        "false_pass": 0.0
+      },
+      "300": {
+        "emit_rate": 1.0,
+        "n_emit": 2000,
+        "coverage": 0.972,
+        "false_pass": 0.0
+      }
+    },
+    "bh": {
+      "50": {
+        "emit_rate": 0.1105,
+        "n_emit": 221,
+        "coverage": 0.9729,
+        "false_pass": 0.0
+      },
+      "100": {
+        "emit_rate": 0.767,
+        "n_emit": 1534,
+        "coverage": 0.9765,
+        "false_pass": 0.0
+      },
+      "150": {
+        "emit_rate": 0.966,
+        "n_emit": 1932,
+        "coverage": 0.972,
+        "false_pass": 0.0
+      },
+      "200": {
+        "emit_rate": 0.997,
+        "n_emit": 1994,
+        "coverage": 0.9824,
+        "false_pass": 0.0
+      },
+      "300": {
+        "emit_rate": 1.0,
+        "n_emit": 2000,
+        "coverage": 0.972,
+        "false_pass": 0.0
+      }
+    },
+    "split": {
+      "50": {
+        "emit_rate": 0.0,
+        "n_emit": 0,
+        "coverage": null,
+        "false_pass": null
+      },
+      "100": {
+        "emit_rate": 0.0165,
+        "n_emit": 33,
+        "coverage": 1.0,
+        "false_pass": 0.0
+      },
+      "150": {
+        "emit_rate": 0.24,
+        "n_emit": 480,
+        "coverage": 1.0,
+        "false_pass": 0.0
+      },
+      "200": {
+        "emit_rate": 0.525,
+        "n_emit": 1050,
+        "coverage": 0.9943,
+        "false_pass": 0.0
+      },
+      "300": {
+        "emit_rate": 0.7575,
+        "n_emit": 1515,
+        "coverage": 0.9875,
+        "false_pass": 0.0
+      }
+    }
+  },
+  "full_data_grid": {
+    "harmful": {
+      "unadjusted_pass": [
+        "gemma2_9b",
+        "llamaguard3_1b",
+        "phi3_medium",
+        "qwen7b",
+        "wildguard"
+      ],
+      "bonferroni": {
+        "pass": [
+          "gemma2_9b",
+          "phi3_medium",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [
+          "llamaguard3_1b",
+          "qwen7b"
+        ],
+        "added_vs_unadjusted": []
+      },
+      "bh": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      }
+    },
+    "sensitive": {
+      "unadjusted_pass": [
+        "gemma2_9b",
+        "llamaguard3_1b",
+        "phi3_medium"
+      ],
+      "bonferroni": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      },
+      "bh": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      }
+    },
+    "harmbench": {
+      "unadjusted_pass": [
+        "gemma2_9b",
+        "llamaguard3_1b",
+        "phi3_medium",
+        "qwen7b",
+        "wildguard"
+      ],
+      "bonferroni": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      },
+      "bh": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      }
+    },
+    "xstest": {
+      "unadjusted_pass": [
+        "gemma2_9b",
+        "llamaguard3_1b",
+        "phi3_medium",
+        "qwen7b",
+        "shieldgemma_9b",
+        "wildguard"
+      ],
+      "bonferroni": {
+        "pass": [
+          "gemma2_9b",
+          "phi3_medium",
+          "qwen7b",
+          "shieldgemma_9b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [
+          "llamaguard3_1b"
+        ],
+        "added_vs_unadjusted": []
+      },
+      "bh": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "shieldgemma_9b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      }
+    },
+    "beavertails": {
+      "unadjusted_pass": [
+        "gemma2_9b",
+        "llamaguard3_1b",
+        "phi3_medium",
+        "qwen7b",
+        "shieldgemma_9b",
+        "wildguard"
+      ],
+      "bonferroni": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "shieldgemma_9b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      },
+      "bh": {
+        "pass": [
+          "gemma2_9b",
+          "llamaguard3_1b",
+          "phi3_medium",
+          "qwen7b",
+          "shieldgemma_9b",
+          "wildguard"
+        ],
+        "removed_vs_unadjusted": [],
+        "added_vs_unadjusted": []
+      }
+    }
+  }
+}

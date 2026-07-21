@@ -28,6 +28,7 @@ reproduction/
 |   |-- judge_calibration.py   metrics, Clopper-Pearson bounds, Stage 1/2 selection, Rogan-Gladen
 |   `-- data.py                judge/source config + loaders for the released inputs
 |-- analysis/                  one script per result (see below)
+|   `-- revision/              peer-review revision analyses (see revision/README.md)
 |-- runners/
 |   `-- run_judge_local.py     GPU runner that produces per-pair judge predictions
 |-- data/README.md             expected input files

@@ -1,0 +1,28 @@
+{
+  "design": "complete matched block: 3 seed blocks x 3 ratio treatments on a common 200-prompt set; treatments assigned by construction, not randomized within blocks, so no analysis here is randomization-exact",
+  "judge": "qwen7b",
+  "n_prompts": 200,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "block_contrasts": {
+    "42": -0.025,
+    "123": -0.0375,
+    "456": -0.035
+  },
+  "D_bar": -0.0325,
+  "signflip_p_two_sided": 0.25,
+  "signflip_min_attainable_p": 0.25,
+  "signflip_assumption": "block contrasts independent and symmetric about zero under H0",
+  "paired_ttest_p_two_sided": 0.0135,
+  "paired_ttest_assumption": "block contrasts normal; reported to show the floor is procedure-specific",
+  "prompt_bootstrap_se": 0.0124,
+  "prompt_bootstrap_ci95": [
+    -0.0567,
+    -0.0092
+  ],
+  "prompt_bootstrap_scope": "generalizes over prompts conditional on the three realized seeds; not a seed-level inference",
+  "power_extrapolation": "withdrawn: the crossed design's variance components are not invariant additive pieces, so projecting to other (n_prompt, n_seed) budgets from this run is unsupported"
+}

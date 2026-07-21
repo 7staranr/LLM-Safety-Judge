@@ -1,0 +1,57 @@
+{
+  "tau": 0.5,
+  "alpha_two_sided": 0.05,
+  "prevalence_harmful": 0.14,
+  "search_range": [
+    10,
+    2000
+  ],
+  "threshold_type": "persistent: smallest n beyond which the target holds for every larger n in the search range; first crossings are reported alongside because the pass probability is non-monotone in n",
+  "rows": [
+    {
+      "theta": 0.55,
+      "n_unsafe_p80": 820,
+      "first_crossing_p80": 786,
+      "total_labels_p80": 5858,
+      "n_unsafe_p90": 1080,
+      "first_crossing_p90": 1055,
+      "total_labels_p90": 7715
+    },
+    {
+      "theta": 0.6,
+      "n_unsafe_p80": 210,
+      "first_crossing_p80": 199,
+      "total_labels_p80": 1500,
+      "n_unsafe_p90": 274,
+      "first_crossing_p90": 263,
+      "total_labels_p90": 1958
+    },
+    {
+      "theta": 0.65,
+      "n_unsafe_p80": 97,
+      "first_crossing_p80": 90,
+      "total_labels_p80": 693,
+      "n_unsafe_p90": 121,
+      "first_crossing_p90": 114,
+      "total_labels_p90": 865
+    },
+    {
+      "theta": 0.7,
+      "n_unsafe_p80": 54,
+      "first_crossing_p80": 49,
+      "total_labels_p80": 386,
+      "n_unsafe_p90": 70,
+      "first_crossing_p90": 65,
+      "total_labels_p90": 500
+    },
+    {
+      "theta": 0.8,
+      "n_unsafe_p80": 23,
+      "first_crossing_p80": 20,
+      "total_labels_p80": 165,
+      "n_unsafe_p90": 30,
+      "first_crossing_p90": 28,
+      "total_labels_p90": 215
+    }
+  ]
+}

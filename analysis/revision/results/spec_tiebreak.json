@@ -1,0 +1,188 @@
+{
+  "variants": [
+    "R5_BA",
+    "R5_Spec",
+    "R5_Sens"
+  ],
+  "per_source": {
+    "harmful": {
+      "full_data_selection": {
+        "R5_BA": "wildguard",
+        "R5_Spec": "wildguard",
+        "R5_Sens": "phi3_medium"
+      },
+      "kfold": {
+        "R5_BA": {
+          "mean_mae": 0.0316,
+          "mean_signed_bias": -0.0055,
+          "mean_fpr": 0.0295,
+          "false_positives": 7,
+          "n_safe": 240
+        },
+        "R5_Spec": {
+          "mean_mae": 0.0221,
+          "mean_signed_bias": -0.0093,
+          "mean_fpr": 0.0216,
+          "false_positives": 5,
+          "n_safe": 237
+        },
+        "R5_Sens": {
+          "mean_mae": 0.3002,
+          "mean_signed_bias": 0.3002,
+          "mean_fpr": 0.3573,
+          "false_positives": 79,
+          "n_safe": 222
+        }
+      }
+    },
+    "sensitive": {
+      "full_data_selection": {
+        "R5_BA": "gemma2_9b",
+        "R5_Spec": "llamaguard3_1b",
+        "R5_Sens": "gemma2_9b"
+      },
+      "kfold": {
+        "R5_BA": {
+          "mean_mae": 0.1553,
+          "mean_signed_bias": 0.0902,
+          "mean_fpr": 0.3087,
+          "false_positives": 34,
+          "n_safe": 111
+        },
+        "R5_Spec": {
+          "mean_mae": 0.1149,
+          "mean_signed_bias": 0.0237,
+          "mean_fpr": 0.2304,
+          "false_positives": 25,
+          "n_safe": 111
+        },
+        "R5_Sens": {
+          "mean_mae": 0.1603,
+          "mean_signed_bias": 0.1086,
+          "mean_fpr": 0.3004,
+          "false_positives": 33,
+          "n_safe": 111
+        }
+      }
+    },
+    "harmbench": {
+      "full_data_selection": {
+        "R5_BA": "gemma2_9b",
+        "R5_Spec": "gemma2_9b",
+        "R5_Sens": "phi3_medium"
+      },
+      "kfold": {
+        "R5_BA": {
+          "mean_mae": 0.0443,
+          "mean_signed_bias": -0.0397,
+          "mean_fpr": 0.034,
+          "false_positives": 3,
+          "n_safe": 89
+        },
+        "R5_Spec": {
+          "mean_mae": 0.0443,
+          "mean_signed_bias": -0.0397,
+          "mean_fpr": 0.034,
+          "false_positives": 3,
+          "n_safe": 89
+        },
+        "R5_Sens": {
+          "mean_mae": 0.1923,
+          "mean_signed_bias": 0.1802,
+          "mean_fpr": 0.4192,
+          "false_positives": 33,
+          "n_safe": 78
+        }
+      }
+    },
+    "xstest": {
+      "full_data_selection": {
+        "R5_BA": "gemma2_9b",
+        "R5_Spec": "wildguard",
+        "R5_Sens": "gemma2_9b"
+      },
+      "kfold": {
+        "R5_BA": {
+          "mean_mae": 0.0825,
+          "mean_signed_bias": 0.0762,
+          "mean_fpr": 0.1459,
+          "false_positives": 25,
+          "n_safe": 170
+        },
+        "R5_Spec": {
+          "mean_mae": 0.0714,
+          "mean_signed_bias": -0.0322,
+          "mean_fpr": 0.0679,
+          "false_positives": 11,
+          "n_safe": 165
+        },
+        "R5_Sens": {
+          "mean_mae": 0.0825,
+          "mean_signed_bias": 0.0762,
+          "mean_fpr": 0.1459,
+          "false_positives": 25,
+          "n_safe": 170
+        }
+      }
+    },
+    "beavertails": {
+      "full_data_selection": {
+        "R5_BA": "gemma2_9b",
+        "R5_Spec": "shieldgemma_9b",
+        "R5_Sens": "gemma2_9b"
+      },
+      "kfold": {
+        "R5_BA": {
+          "mean_mae": 0.1103,
+          "mean_signed_bias": 0.0936,
+          "mean_fpr": 0.1879,
+          "false_positives": 14,
+          "n_safe": 77
+        },
+        "R5_Spec": {
+          "mean_mae": 0.1056,
+          "mean_signed_bias": -0.0193,
+          "mean_fpr": 0.1342,
+          "false_positives": 10,
+          "n_safe": 76
+        },
+        "R5_Sens": {
+          "mean_mae": 0.0936,
+          "mean_signed_bias": 0.0936,
+          "mean_fpr": 0.1768,
+          "false_positives": 13,
+          "n_safe": 77
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "R5_BA": {
+      "mean_mae": 0.0848,
+      "mean_signed_bias": 0.043,
+      "mean_fpr": 0.1412,
+      "false_positives": 83,
+      "n_safe": 687,
+      "pooled_fpr": 0.1208,
+      "abstain_folds": 0
+    },
+    "R5_Spec": {
+      "mean_mae": 0.0716,
+      "mean_signed_bias": -0.0154,
+      "mean_fpr": 0.0976,
+      "false_positives": 54,
+      "n_safe": 678,
+      "pooled_fpr": 0.0796,
+      "abstain_folds": 0
+    },
+    "R5_Sens": {
+      "mean_mae": 0.1658,
+      "mean_signed_bias": 0.1517,
+      "mean_fpr": 0.2799,
+      "false_positives": 183,
+      "n_safe": 658,
+      "pooled_fpr": 0.2781,
+      "abstain_folds": 0
+    }
+  }
+}

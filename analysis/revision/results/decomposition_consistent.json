@@ -1,0 +1,146 @@
+{
+  "basis": {
+    "judge_pool": [
+      "qwen7b",
+      "llama3b",
+      "mistral7b"
+    ],
+    "pool_note": "three judges with full 5-seed x 200-prompt evaluation predictions on the harmful source; Llama Guard 3-1B has calibration-set predictions only and is excluded to avoid mixing sampling frames",
+    "stage1_lower_bounds_full_calibration": {
+      "qwen7b": 0.529,
+      "llama3b": 0.48,
+      "mistral7b": 0.054
+    },
+    "tau_min": 0.5,
+    "correction": "per-condition Rogan-Gladen, identical to main-text Table 4",
+    "raw_asr_basis": "mean over 5 seeds x 200 prompts per condition"
+  },
+  "passing_judges": [
+    "qwen7b"
+  ],
+  "failing_judges": [
+    "llama3b",
+    "mistral7b"
+  ],
+  "tables": {
+    "1to0": {
+      "A_all_raw": {
+        "mean": 0.257,
+        "per_judge": {
+          "qwen7b": 0.417,
+          "llama3b": 0.312,
+          "mistral7b": 0.042
+        },
+        "n_judges": 3
+      },
+      "B_all_corrected": {
+        "mean": 0.2967,
+        "per_judge": {
+          "qwen7b": 0.323,
+          "llama3b": 0.3045,
+          "mistral7b": 0.2625
+        },
+        "n_judges": 3
+      },
+      "C_passing_raw": {
+        "mean": 0.417,
+        "per_judge": {
+          "qwen7b": 0.417
+        },
+        "n_judges": 1
+      },
+      "D_passing_corrected": {
+        "mean": 0.323,
+        "per_judge": {
+          "qwen7b": 0.323
+        },
+        "n_judges": 1
+      }
+    },
+    "2to1": {
+      "A_all_raw": {
+        "mean": 0.0897,
+        "per_judge": {
+          "qwen7b": 0.103,
+          "llama3b": 0.158,
+          "mistral7b": 0.008
+        },
+        "n_judges": 3
+      },
+      "B_all_corrected": {
+        "mean": 0.0718,
+        "per_judge": {
+          "qwen7b": 0.0681,
+          "llama3b": 0.0673,
+          "mistral7b": 0.08
+        },
+        "n_judges": 3
+      },
+      "C_passing_raw": {
+        "mean": 0.103,
+        "per_judge": {
+          "qwen7b": 0.103
+        },
+        "n_judges": 1
+      },
+      "D_passing_corrected": {
+        "mean": 0.0681,
+        "per_judge": {
+          "qwen7b": 0.0681
+        },
+        "n_judges": 1
+      }
+    },
+    "1to1": {
+      "A_all_raw": {
+        "mean": 0.0677,
+        "per_judge": {
+          "qwen7b": 0.075,
+          "llama3b": 0.121,
+          "mistral7b": 0.007
+        },
+        "n_judges": 3
+      },
+      "B_all_corrected": {
+        "mean": 0.032,
+        "per_judge": {
+          "qwen7b": 0.041,
+          "llama3b": 0.006,
+          "mistral7b": 0.049
+        },
+        "n_judges": 3
+      },
+      "C_passing_raw": {
+        "mean": 0.075,
+        "per_judge": {
+          "qwen7b": 0.075
+        },
+        "n_judges": 1
+      },
+      "D_passing_corrected": {
+        "mean": 0.041,
+        "per_judge": {
+          "qwen7b": 0.041
+        },
+        "n_judges": 1
+      }
+    }
+  },
+  "decomposition": {
+    "1to0": {
+      "filter_effect_C_minus_A": 0.16,
+      "correction_effect_D_minus_C": -0.094,
+      "combined_effect_D_minus_A": 0.066
+    },
+    "2to1": {
+      "filter_effect_C_minus_A": 0.0133,
+      "correction_effect_D_minus_C": -0.0349,
+      "combined_effect_D_minus_A": -0.0215
+    },
+    "1to1": {
+      "filter_effect_C_minus_A": 0.0073,
+      "correction_effect_D_minus_C": -0.034,
+      "combined_effect_D_minus_A": -0.0266
+    }
+  }
+}
