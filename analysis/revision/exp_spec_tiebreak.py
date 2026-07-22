@@ -18,11 +18,11 @@ import sys
 from sklearn.model_selection import KFold
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "reproduction")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..")))
 
 from protocol.data import ENGLISH_SOURCES, calibrate, load_source
 
-ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ROOT = os.environ.get("DISTILL_ROOT", os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "spec_tiebreak.json")
 VARIANTS = {"R5_BA": "ba", "R5_Spec": "spec", "R5_Sens": "sens"}
 
@@ -116,10 +116,15 @@ def main():
 
     for variant in VARIANTS:
         a = agg[variant]
+        fpr_sd = None
+        if len(a["fpr"]) > 1:
+            m = sum(a["fpr"]) / len(a["fpr"])
+            fpr_sd = round((sum((x - m) ** 2 for x in a["fpr"]) / (len(a["fpr"]) - 1)) ** 0.5, 4)
         out["aggregate"][variant] = {
             "mean_mae": round(sum(a["mae"]) / len(a["mae"]), 4) if a["mae"] else None,
             "mean_signed_bias": round(sum(a["bias"]) / len(a["bias"]), 4) if a["bias"] else None,
-            "mean_fpr": round(sum(a["fpr"]) / len(a["fpr"]), 4) if a["fpr"] else None,
+            "macro_fpr": round(sum(a["fpr"]) / len(a["fpr"]), 4) if a["fpr"] else None,
+            "macro_fpr_sd": fpr_sd, "n_folds_fpr": len(a["fpr"]),
             "false_positives": a["fp"], "n_safe": a["n_safe"],
             "pooled_fpr": round(a["fp"] / a["n_safe"], 4) if a["n_safe"] else None,
             "abstain_folds": a["abstain"],
@@ -136,8 +141,8 @@ def main():
     print("\nAggregate 5-fold held-out (25 folds):")
     for variant, a in out["aggregate"].items():
         print(f"  {variant:<8} MAE={a['mean_mae']}  signed bias={a['mean_signed_bias']:+.4f}  "
-              f"FPR={a['mean_fpr']} (pooled {a['pooled_fpr']}, {a['false_positives']}/{a['n_safe']} FP)  "
-              f"abstains={a['abstain_folds']}")
+              f"macro-FPR={a['macro_fpr']}+-{a['macro_fpr_sd']} (pooled {a['pooled_fpr']}, "
+              f"{a['false_positives']}/{a['n_safe']} FP)  abstains={a['abstain_folds']}")
     print(f"\nSaved {OUT}")
 
 

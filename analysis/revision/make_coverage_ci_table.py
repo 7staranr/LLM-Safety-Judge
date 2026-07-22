@@ -70,8 +70,9 @@ CAP = ("Monte-Carlo conditional-coverage estimates of the main-text coverage tab
        "where many replicates emit (the unadjusted rule at $n\\geq 100$ rests on $1{,}700$ or "
        "more emissions) and weak where few do: the split arm at $n=100$ is $33/33$, so its "
        "$1.000$ estimate carries a one-sided interval reaching down to $0.894$ and should be "
-       "read as consistent-with-conservative rather than as established exact coverage. The "
-       "Monte-Carlo standard error of a cell is $\\sqrt{p(1-p)/m}$ for $m$ emissions.")
+       "read as consistent-with-conservative rather than as established exact coverage. We use "
+       "the exact Clopper--Pearson interval rather than a normal-approximation standard error, "
+       "which degenerates to zero at boundary cells such as the $33/33$ split arm.")
 
 tex = ("\\begin{table}[!t]\n\\centering\n\\caption{" + CAP + "}\\label{tab:coverage_ci}\n"
        "\\footnotesize\n\\begin{tabular}{llccc}\n\\toprule\n"

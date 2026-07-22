@@ -160,7 +160,9 @@
     "R5_BA": {
       "mean_mae": 0.0848,
       "mean_signed_bias": 0.043,
-      "mean_fpr": 0.1412,
+      "macro_fpr": 0.1412,
+      "macro_fpr_sd": 0.1186,
+      "n_folds_fpr": 25,
       "false_positives": 83,
       "n_safe": 687,
       "pooled_fpr": 0.1208,
@@ -169,7 +171,9 @@
     "R5_Spec": {
       "mean_mae": 0.0716,
       "mean_signed_bias": -0.0154,
-      "mean_fpr": 0.0976,
+      "macro_fpr": 0.0976,
+      "macro_fpr_sd": 0.0971,
+      "n_folds_fpr": 25,
       "false_positives": 54,
       "n_safe": 678,
       "pooled_fpr": 0.0796,
@@ -178,7 +182,9 @@
     "R5_Sens": {
       "mean_mae": 0.1658,
       "mean_signed_bias": 0.1517,
-      "mean_fpr": 0.2799,
+      "macro_fpr": 0.2799,
+      "macro_fpr_sd": 0.1297,
+      "n_folds_fpr": 25,
       "false_positives": 183,
       "n_safe": 658,
       "pooled_fpr": 0.2781,

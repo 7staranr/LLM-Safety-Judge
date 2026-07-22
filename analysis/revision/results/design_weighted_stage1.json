@@ -587,11 +587,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.4776,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.0,
@@ -601,6 +596,11 @@
               "n_unsafe": 12,
               "recall": 1.0,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.4776,
+              "weight": 4.4
             }
           }
         },
@@ -614,11 +614,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.0597,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.0,
@@ -628,6 +623,11 @@
               "n_unsafe": 12,
               "recall": 1.0,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.0597,
+              "weight": 4.4
             }
           }
         },
@@ -641,11 +641,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.0896,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.0,
@@ -655,6 +650,11 @@
               "n_unsafe": 12,
               "recall": 1.0,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.0896,
+              "weight": 4.4
             }
           }
         },
@@ -668,11 +668,6 @@
           "stage1_weighted": "PASS",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.8507,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.0,
@@ -682,6 +677,11 @@
               "n_unsafe": 12,
               "recall": 1.0,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.8507,
+              "weight": 4.4
             }
           }
         },
@@ -695,11 +695,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 66,
-              "recall": 0.1061,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.1,
@@ -709,6 +704,11 @@
               "n_unsafe": 11,
               "recall": 0.7273,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 66,
+              "recall": 0.1061,
+              "weight": 4.4
             }
           }
         },
@@ -749,11 +749,6 @@
           "stage1_weighted": "PASS",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.8955,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.8,
@@ -763,6 +758,11 @@
               "n_unsafe": 12,
               "recall": 1.0,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.8955,
+              "weight": 4.4
             }
           }
         },
@@ -776,11 +776,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.194,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.1,
@@ -790,6 +785,11 @@
               "n_unsafe": 12,
               "recall": 0.25,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.194,
+              "weight": 4.4
             }
           }
         },
@@ -803,11 +803,6 @@
           "stage1_weighted": "FAIL",
           "verdict_changed": false,
           "per_stratum_recall": {
-            "disagree": {
-              "n_unsafe": 67,
-              "recall": 0.5821,
-              "weight": 4.4
-            },
             "all_safe": {
               "n_unsafe": 10,
               "recall": 0.3,
@@ -817,6 +812,11 @@
               "n_unsafe": 12,
               "recall": 0.75,
               "weight": 1.0
+            },
+            "disagree": {
+              "n_unsafe": 67,
+              "recall": 0.5821,
+              "weight": 4.4
             }
           }
         }

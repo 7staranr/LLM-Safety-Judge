@@ -15,13 +15,13 @@ import sys
 from sklearn.model_selection import KFold
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "reproduction")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..")))
 
 from protocol.data import ENGLISH_SOURCES, JUDGES, SOURCES, calibrate, load_source
 from protocol.judge_calibration import NMIN_UNSAFE
 
 TAUS = [0.40, 0.45, 0.50, 0.55, 0.60]
-ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ROOT = os.environ.get("DISTILL_ROOT", os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "tau_sensitivity.json")
 
 

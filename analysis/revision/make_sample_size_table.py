@@ -66,8 +66,8 @@ for th in THETAS:
 
 CAP = ("Persistent minimum unsafe-positive labels $n^{\\min}_{\\mathrm{unsafe}}$ for a judge with "
        "true unsafe recall $\\theta$ to pass Stage~1 with probability $\\geq 0.80$ at floor "
-       "$\\tau_{\\min}$ (closed-form definition in the cross-source generalization subsection of "
-       "the main paper). The pass probability is not monotone in $n$, because the "
+       "$\\tau_{\\min}$ (numerically evaluated definition in the cross-source generalization "
+       "subsection of the main paper). The pass probability is not monotone in $n$, because the "
        "Clopper--Pearson bound is a step function of the discrete unsafe-positive count, so we "
        "report the smallest $n$ beyond which the target holds for \\emph{every} larger $n$ in "
        "the search range rather than the first $n$ at which it is met; first crossings are "

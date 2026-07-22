@@ -16,12 +16,12 @@ import sys
 from glob import glob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "reproduction")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..")))
 
 from protocol.data import SOURCES, load_source
 from protocol.judge_calibration import compute_metrics, metrics_to_dict
 
-ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ROOT = os.environ.get("DISTILL_ROOT", os.path.abspath(os.path.join(HERE, "..", "..")))
 GPU_DIR = os.path.join(HERE, "..", "gpu_results")
 OUT = os.path.join(HERE, "results", "multilingual_judges.json")
 

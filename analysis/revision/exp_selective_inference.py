@@ -35,11 +35,11 @@ from scipy.stats import beta as beta_dist
 from scipy.stats import binom
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "reproduction")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..")))
 
 from protocol.data import ENGLISH_SOURCES, JUDGES, load_source
 
-ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ROOT = os.environ.get("DISTILL_ROOT", os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "selective_inference.json")
 
 TAU = 0.50
