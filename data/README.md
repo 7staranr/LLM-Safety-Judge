@@ -1,9 +1,22 @@
 # Data Notes
 
-This directory is only a placeholder for documentation. The reproduction scripts
-expect data files at the project root, not inside this `data/` directory.
+The inputs the analysis scripts read are bundled in this repository so it is
+self-contained. Point `DISTILL_ROOT` at the repository root before running any
+script (the loaders otherwise default to a path outside the package):
 
-Required human-adjudicated files:
+```bash
+export DISTILL_ROOT="$(pwd)"        # from the repository root
+python analysis/compute_k9_calibration.py
+```
+
+The `<source>` prompts come from the paper's internal harmful and sensitive sets
+(released here) and from public benchmarks (HarmBench, XSTest, BeaverTails,
+AdvBench, MultiJail); the benchmark-derived prompts are redistributed for
+reproduction under their original licenses, which should be consulted for reuse.
+The `response` fields are the paper's own SFT-student generations, and the judge
+predictions are the paper's own model outputs.
+
+Human-adjudicated files (all included under `human_annotation/`):
 
 ```text
 human_annotation/natural_300_adjudicated.json

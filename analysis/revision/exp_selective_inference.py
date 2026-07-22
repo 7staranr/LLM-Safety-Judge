@@ -16,7 +16,9 @@ Variants:
   bh           Stage-1 admits by Benjamini-Hochberg over exact binomial
                p-values for H0: theta <= tau (FDR control); CI unadjusted
   split        selection on one half of the study, CI recomputed on the
-               held-out half (valid post-selection inference by construction)
+               held-out half; this bounds the false-certification probability by
+               construction, it does not make the interval's coverage exact
+               conditional on emission
 
 Also reports the full-data effect of each variant on the 5 English sources
 x 9 judges grid (pass-set changes vs the unadjusted rule).

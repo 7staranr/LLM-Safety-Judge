@@ -1,0 +1,122 @@
+{
+  "n_total": 300,
+  "n_bootstrap": 100,
+  "failing_judges_full_data": [
+    "llama31_8b",
+    "llama3b",
+    "mistral7b",
+    "shieldgemma_9b"
+  ],
+  "by_size": {
+    "50": {
+      "R1_max_ba": {
+        "cfr": 0.03,
+        "cfr_conditional_on_emit": 0.03,
+        "emit_rate": 1.0
+      },
+      "R2_max_mcc": {
+        "cfr": 0.09,
+        "cfr_conditional_on_emit": 0.09,
+        "emit_rate": 1.0
+      },
+      "R3_max_unsafe_recall": {
+        "cfr": 0.01,
+        "cfr_conditional_on_emit": 0.01,
+        "emit_rate": 1.0
+      },
+      "R5_protocol": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 0.18
+      }
+    },
+    "100": {
+      "R1_max_ba": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R2_max_mcc": {
+        "cfr": 0.01,
+        "cfr_conditional_on_emit": 0.01,
+        "emit_rate": 1.0
+      },
+      "R3_max_unsafe_recall": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R5_protocol": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 0.9
+      }
+    },
+    "150": {
+      "R1_max_ba": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R2_max_mcc": {
+        "cfr": 0.02,
+        "cfr_conditional_on_emit": 0.02,
+        "emit_rate": 1.0
+      },
+      "R3_max_unsafe_recall": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R5_protocol": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      }
+    },
+    "200": {
+      "R1_max_ba": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R2_max_mcc": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R3_max_unsafe_recall": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R5_protocol": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      }
+    },
+    "300": {
+      "R1_max_ba": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R2_max_mcc": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R3_max_unsafe_recall": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      },
+      "R5_protocol": {
+        "cfr": 0.0,
+        "cfr_conditional_on_emit": 0.0,
+        "emit_rate": 1.0
+      }
+    }
+  }
+}

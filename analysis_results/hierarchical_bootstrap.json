@@ -1,0 +1,155 @@
+{
+  "B": 2000,
+  "rules": {
+    "R1_max_ba": {
+      "mean_mae": {
+        "naive_mean": 0.077,
+        "naive_se": 0.0112,
+        "naive_n": 25,
+        "across_source_mean": 0.077,
+        "across_source_se": 0.012,
+        "across_source_n": 5,
+        "hbootstrap_mean": 0.0769,
+        "hbootstrap_ci_lo": 0.0487,
+        "hbootstrap_ci_hi": 0.1073,
+        "precision_overstate_factor": 0.93,
+        "icc": {
+          "ms_between": 0.003604,
+          "ms_within": 0.003057,
+          "icc": 0.0346,
+          "n_eff": 21.96,
+          "k_per_source_avg": 5.0
+        }
+      },
+      "max_mae": {
+        "naive_mean": 0.135,
+        "naive_se": 0.0168,
+        "across_source_mean": 0.135,
+        "across_source_se": 0.0186,
+        "hbootstrap_mean": 0.1349,
+        "hbootstrap_ci_lo": 0.0973,
+        "hbootstrap_ci_hi": 0.183
+      }
+    },
+    "R2_max_mcc": {
+      "mean_mae": {
+        "naive_mean": 0.077,
+        "naive_se": 0.0112,
+        "naive_n": 25,
+        "across_source_mean": 0.077,
+        "across_source_se": 0.012,
+        "across_source_n": 5,
+        "hbootstrap_mean": 0.0767,
+        "hbootstrap_ci_lo": 0.0496,
+        "hbootstrap_ci_hi": 0.1062,
+        "precision_overstate_factor": 0.93,
+        "icc": {
+          "ms_between": 0.003604,
+          "ms_within": 0.003057,
+          "icc": 0.0346,
+          "n_eff": 21.96,
+          "k_per_source_avg": 5.0
+        }
+      },
+      "max_mae": {
+        "naive_mean": 0.135,
+        "naive_se": 0.0168,
+        "across_source_mean": 0.135,
+        "across_source_se": 0.0186,
+        "hbootstrap_mean": 0.1357,
+        "hbootstrap_ci_lo": 0.0959,
+        "hbootstrap_ci_hi": 0.1811
+      }
+    },
+    "R3_max_unsafe_recall": {
+      "mean_mae": {
+        "naive_mean": 0.0774,
+        "naive_se": 0.0112,
+        "naive_n": 25,
+        "across_source_mean": 0.0774,
+        "across_source_se": 0.0122,
+        "across_source_n": 5,
+        "hbootstrap_mean": 0.077,
+        "hbootstrap_ci_lo": 0.0499,
+        "hbootstrap_ci_hi": 0.1068,
+        "precision_overstate_factor": 0.92,
+        "icc": {
+          "ms_between": 0.003699,
+          "ms_within": 0.003013,
+          "icc": 0.0435,
+          "n_eff": 21.29,
+          "k_per_source_avg": 5.0
+        }
+      },
+      "max_mae": {
+        "naive_mean": 0.1405,
+        "naive_se": 0.0177,
+        "across_source_mean": 0.1405,
+        "across_source_se": 0.0204,
+        "hbootstrap_mean": 0.1414,
+        "hbootstrap_ci_lo": 0.0977,
+        "hbootstrap_ci_hi": 0.1912
+      }
+    },
+    "R4_max_safe_recall": {
+      "mean_mae": {
+        "naive_mean": 0.2602,
+        "naive_se": 0.021,
+        "naive_n": 25,
+        "across_source_mean": 0.2602,
+        "across_source_se": 0.044,
+        "across_source_n": 5,
+        "hbootstrap_mean": 0.2611,
+        "hbootstrap_ci_lo": 0.1843,
+        "hbootstrap_ci_hi": 0.3366,
+        "precision_overstate_factor": 0.48,
+        "icc": {
+          "ms_between": 0.04843,
+          "ms_within": 0.003498,
+          "icc": 0.7198,
+          "n_eff": 6.44,
+          "k_per_source_avg": 5.0
+        }
+      },
+      "max_mae": {
+        "naive_mean": 0.3703,
+        "naive_se": 0.0278,
+        "across_source_mean": 0.3703,
+        "across_source_se": 0.0472,
+        "hbootstrap_mean": 0.3699,
+        "hbootstrap_ci_lo": 0.277,
+        "hbootstrap_ci_hi": 0.4587
+      }
+    },
+    "R5_two_stage": {
+      "mean_mae": {
+        "naive_mean": 0.077,
+        "naive_se": 0.0112,
+        "naive_n": 25,
+        "across_source_mean": 0.077,
+        "across_source_se": 0.012,
+        "across_source_n": 5,
+        "hbootstrap_mean": 0.0768,
+        "hbootstrap_ci_lo": 0.0499,
+        "hbootstrap_ci_hi": 0.1057,
+        "precision_overstate_factor": 0.93,
+        "icc": {
+          "ms_between": 0.003604,
+          "ms_within": 0.003057,
+          "icc": 0.0346,
+          "n_eff": 21.96,
+          "k_per_source_avg": 5.0
+        }
+      },
+      "max_mae": {
+        "naive_mean": 0.135,
+        "naive_se": 0.0168,
+        "across_source_mean": 0.135,
+        "across_source_se": 0.0186,
+        "hbootstrap_mean": 0.1345,
+        "hbootstrap_ci_lo": 0.0951,
+        "hbootstrap_ci_hi": 0.1812
+      }
+    }
+  }
+}

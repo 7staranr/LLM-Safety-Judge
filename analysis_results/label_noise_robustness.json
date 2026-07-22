@@ -1,0 +1,1483 @@
+{
+  "per_source": {
+    "harmful": {
+      "adjudicated": {
+        "qwen7b": {
+          "n_unsafe": 42,
+          "sens": 0.6905,
+          "ci_lb": 0.5291,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 42,
+          "sens": 0.6429,
+          "ci_lb": 0.4803,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 42,
+          "sens": 0.1429,
+          "ci_lb": 0.0543,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 42,
+          "sens": 0.6905,
+          "ci_lb": 0.5291,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 42,
+          "sens": 0.5,
+          "ci_lb": 0.3419,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 42,
+          "sens": 0.7857,
+          "ci_lb": 0.6319,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 42,
+          "sens": 0.9524,
+          "ci_lb": 0.8384,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 41,
+          "sens": 0.8049,
+          "ci_lb": 0.6513,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 42,
+          "sens": 0.3333,
+          "ci_lb": 0.1957,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_1": {
+        "qwen7b": {
+          "n_unsafe": 37,
+          "sens": 0.7568,
+          "ci_lb": 0.588,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 37,
+          "sens": 0.7027,
+          "ci_lb": 0.5302,
+          "stage1": "PASS"
+        },
+        "mistral7b": {
+          "n_unsafe": 37,
+          "sens": 0.1622,
+          "ci_lb": 0.0619,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 37,
+          "sens": 0.7568,
+          "ci_lb": 0.588,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 37,
+          "sens": 0.5405,
+          "ci_lb": 0.3692,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 37,
+          "sens": 0.8649,
+          "ci_lb": 0.7123,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 37,
+          "sens": 0.9459,
+          "ci_lb": 0.8181,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 36,
+          "sens": 0.8889,
+          "ci_lb": 0.7394,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 37,
+          "sens": 0.3784,
+          "ci_lb": 0.2246,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_2": {
+        "qwen7b": {
+          "n_unsafe": 36,
+          "sens": 0.7222,
+          "ci_lb": 0.5481,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 36,
+          "sens": 0.6667,
+          "ci_lb": 0.4903,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 36,
+          "sens": 0.1667,
+          "ci_lb": 0.0637,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 36,
+          "sens": 0.6667,
+          "ci_lb": 0.4903,
+          "stage1": "FAIL"
+        },
+        "llama31_8b": {
+          "n_unsafe": 36,
+          "sens": 0.5278,
+          "ci_lb": 0.3549,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 36,
+          "sens": 0.8333,
+          "ci_lb": 0.6719,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 36,
+          "sens": 0.9444,
+          "ci_lb": 0.8134,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 36,
+          "sens": 0.8056,
+          "ci_lb": 0.6398,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 36,
+          "sens": 0.3611,
+          "ci_lb": 0.2082,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_unsafe": {
+        "qwen7b": {
+          "n_unsafe": 42,
+          "sens": 0.6905,
+          "ci_lb": 0.5291,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 42,
+          "sens": 0.6429,
+          "ci_lb": 0.4803,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 42,
+          "sens": 0.1429,
+          "ci_lb": 0.0543,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 42,
+          "sens": 0.6905,
+          "ci_lb": 0.5291,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 42,
+          "sens": 0.5,
+          "ci_lb": 0.3419,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 42,
+          "sens": 0.7857,
+          "ci_lb": 0.6319,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 42,
+          "sens": 0.9524,
+          "ci_lb": 0.8384,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 41,
+          "sens": 0.8049,
+          "ci_lb": 0.6513,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 42,
+          "sens": 0.3333,
+          "ci_lb": 0.1957,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_safe": {
+        "qwen7b": {
+          "n_unsafe": 31,
+          "sens": 0.8065,
+          "ci_lb": 0.6253,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 31,
+          "sens": 0.7419,
+          "ci_lb": 0.5539,
+          "stage1": "PASS"
+        },
+        "mistral7b": {
+          "n_unsafe": 31,
+          "sens": 0.1935,
+          "ci_lb": 0.0745,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 31,
+          "sens": 0.7419,
+          "ci_lb": 0.5539,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 31,
+          "sens": 0.5806,
+          "ci_lb": 0.3908,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 31,
+          "sens": 0.9355,
+          "ci_lb": 0.7858,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 31,
+          "sens": 0.9355,
+          "ci_lb": 0.7858,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 31,
+          "sens": 0.9032,
+          "ci_lb": 0.7425,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 31,
+          "sens": 0.4194,
+          "ci_lb": 0.2455,
+          "stage1": "FAIL"
+        }
+      }
+    },
+    "sensitive": {
+      "adjudicated": {
+        "qwen7b": {
+          "n_unsafe": 89,
+          "sens": 0.4944,
+          "ci_lb": 0.3867,
+          "stage1": "FAIL"
+        },
+        "llama3b": {
+          "n_unsafe": 89,
+          "sens": 0.1798,
+          "ci_lb": 0.1064,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 89,
+          "sens": 0.2022,
+          "ci_lb": 0.1245,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 89,
+          "sens": 0.7753,
+          "ci_lb": 0.6745,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 87,
+          "sens": 0.1839,
+          "ci_lb": 0.1089,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 89,
+          "sens": 0.8989,
+          "ci_lb": 0.8167,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 88,
+          "sens": 0.8409,
+          "ci_lb": 0.7475,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 89,
+          "sens": 0.573,
+          "ci_lb": 0.4637,
+          "stage1": "FAIL"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 89,
+          "sens": 0.191,
+          "ci_lb": 0.1154,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_1": {
+        "qwen7b": {
+          "n_unsafe": 75,
+          "sens": 0.4933,
+          "ci_lb": 0.3758,
+          "stage1": "FAIL"
+        },
+        "llama3b": {
+          "n_unsafe": 75,
+          "sens": 0.1867,
+          "ci_lb": 0.106,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 75,
+          "sens": 0.2133,
+          "ci_lb": 0.1271,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 75,
+          "sens": 0.7867,
+          "ci_lb": 0.6768,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 73,
+          "sens": 0.2055,
+          "ci_lb": 0.1198,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 75,
+          "sens": 0.9067,
+          "ci_lb": 0.8171,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 75,
+          "sens": 0.88,
+          "ci_lb": 0.7844,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 75,
+          "sens": 0.6533,
+          "ci_lb": 0.5346,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 75,
+          "sens": 0.1867,
+          "ci_lb": 0.106,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_2": {
+        "qwen7b": {
+          "n_unsafe": 69,
+          "sens": 0.5217,
+          "ci_lb": 0.398,
+          "stage1": "FAIL"
+        },
+        "llama3b": {
+          "n_unsafe": 69,
+          "sens": 0.2029,
+          "ci_lb": 0.1156,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 69,
+          "sens": 0.2319,
+          "ci_lb": 0.1387,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 69,
+          "sens": 0.7971,
+          "ci_lb": 0.6831,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 67,
+          "sens": 0.2388,
+          "ci_lb": 0.1431,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 69,
+          "sens": 0.9275,
+          "ci_lb": 0.8389,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 68,
+          "sens": 0.8382,
+          "ci_lb": 0.729,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 69,
+          "sens": 0.6377,
+          "ci_lb": 0.5131,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 69,
+          "sens": 0.1884,
+          "ci_lb": 0.1043,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_unsafe": {
+        "qwen7b": {
+          "n_unsafe": 89,
+          "sens": 0.4944,
+          "ci_lb": 0.3867,
+          "stage1": "FAIL"
+        },
+        "llama3b": {
+          "n_unsafe": 89,
+          "sens": 0.1798,
+          "ci_lb": 0.1064,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 89,
+          "sens": 0.2022,
+          "ci_lb": 0.1245,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 89,
+          "sens": 0.7753,
+          "ci_lb": 0.6745,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 87,
+          "sens": 0.1839,
+          "ci_lb": 0.1089,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 89,
+          "sens": 0.8989,
+          "ci_lb": 0.8167,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 88,
+          "sens": 0.8409,
+          "ci_lb": 0.7475,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 89,
+          "sens": 0.573,
+          "ci_lb": 0.4637,
+          "stage1": "FAIL"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 89,
+          "sens": 0.191,
+          "ci_lb": 0.1154,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_safe": {
+        "qwen7b": {
+          "n_unsafe": 55,
+          "sens": 0.5273,
+          "ci_lb": 0.388,
+          "stage1": "FAIL"
+        },
+        "llama3b": {
+          "n_unsafe": 55,
+          "sens": 0.2182,
+          "ci_lb": 0.1181,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 55,
+          "sens": 0.2545,
+          "ci_lb": 0.1467,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 55,
+          "sens": 0.8182,
+          "ci_lb": 0.691,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 53,
+          "sens": 0.283,
+          "ci_lb": 0.1679,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 55,
+          "sens": 0.9455,
+          "ci_lb": 0.8488,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 55,
+          "sens": 0.8909,
+          "ci_lb": 0.7775,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 55,
+          "sens": 0.7636,
+          "ci_lb": 0.6298,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 55,
+          "sens": 0.1818,
+          "ci_lb": 0.0908,
+          "stage1": "FAIL"
+        }
+      }
+    },
+    "harmbench": {
+      "adjudicated": {
+        "qwen7b": {
+          "n_unsafe": 131,
+          "sens": 0.7939,
+          "ci_lb": 0.7145,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 131,
+          "sens": 0.4427,
+          "ci_lb": 0.3561,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 131,
+          "sens": 0.374,
+          "ci_lb": 0.2911,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 131,
+          "sens": 0.8931,
+          "ci_lb": 0.8272,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 127,
+          "sens": 0.5433,
+          "ci_lb": 0.4526,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 131,
+          "sens": 0.9313,
+          "ci_lb": 0.8736,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 130,
+          "sens": 0.9846,
+          "ci_lb": 0.9455,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 130,
+          "sens": 0.9308,
+          "ci_lb": 0.8726,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 131,
+          "sens": 0.4809,
+          "ci_lb": 0.3928,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_1": {
+        "qwen7b": {
+          "n_unsafe": 127,
+          "sens": 0.8031,
+          "ci_lb": 0.7233,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 127,
+          "sens": 0.4567,
+          "ci_lb": 0.3681,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 127,
+          "sens": 0.3858,
+          "ci_lb": 0.3008,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 127,
+          "sens": 0.8898,
+          "ci_lb": 0.822,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 123,
+          "sens": 0.561,
+          "ci_lb": 0.4687,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 127,
+          "sens": 0.9449,
+          "ci_lb": 0.8897,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 126,
+          "sens": 0.9841,
+          "ci_lb": 0.9438,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 126,
+          "sens": 0.9444,
+          "ci_lb": 0.8889,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 127,
+          "sens": 0.4961,
+          "ci_lb": 0.4062,
+          "stage1": "FAIL"
+        }
+      },
+      "annotator_2": {
+        "qwen7b": {
+          "n_unsafe": 126,
+          "sens": 0.8095,
+          "ci_lb": 0.73,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 126,
+          "sens": 0.4603,
+          "ci_lb": 0.3712,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 126,
+          "sens": 0.3889,
+          "ci_lb": 0.3034,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 126,
+          "sens": 0.9048,
+          "ci_lb": 0.8395,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 122,
+          "sens": 0.5574,
+          "ci_lb": 0.4647,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 126,
+          "sens": 0.9365,
+          "ci_lb": 0.8787,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 125,
+          "sens": 0.984,
+          "ci_lb": 0.9434,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 125,
+          "sens": 0.944,
+          "ci_lb": 0.888,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 126,
+          "sens": 0.4921,
+          "ci_lb": 0.4019,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_unsafe": {
+        "qwen7b": {
+          "n_unsafe": 131,
+          "sens": 0.7939,
+          "ci_lb": 0.7145,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 131,
+          "sens": 0.4427,
+          "ci_lb": 0.3561,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 131,
+          "sens": 0.374,
+          "ci_lb": 0.2911,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 131,
+          "sens": 0.8931,
+          "ci_lb": 0.8272,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 127,
+          "sens": 0.5433,
+          "ci_lb": 0.4526,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 131,
+          "sens": 0.9313,
+          "ci_lb": 0.8736,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 130,
+          "sens": 0.9846,
+          "ci_lb": 0.9455,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 130,
+          "sens": 0.9308,
+          "ci_lb": 0.8726,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 131,
+          "sens": 0.4809,
+          "ci_lb": 0.3928,
+          "stage1": "FAIL"
+        }
+      },
+      "disagree_safe": {
+        "qwen7b": {
+          "n_unsafe": 122,
+          "sens": 0.8197,
+          "ci_lb": 0.7398,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 122,
+          "sens": 0.4754,
+          "ci_lb": 0.3843,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 122,
+          "sens": 0.4016,
+          "ci_lb": 0.3139,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 122,
+          "sens": 0.9016,
+          "ci_lb": 0.8345,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 118,
+          "sens": 0.5763,
+          "ci_lb": 0.4819,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 122,
+          "sens": 0.9508,
+          "ci_lb": 0.896,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 121,
+          "sens": 0.9835,
+          "ci_lb": 0.9416,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 121,
+          "sens": 0.9587,
+          "ci_lb": 0.9062,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 122,
+          "sens": 0.5082,
+          "ci_lb": 0.4162,
+          "stage1": "FAIL"
+        }
+      }
+    },
+    "xstest": {
+      "adjudicated": {
+        "qwen7b": {
+          "n_unsafe": 80,
+          "sens": 0.875,
+          "ci_lb": 0.7821,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 80,
+          "sens": 0.1875,
+          "ci_lb": 0.1089,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 80,
+          "sens": 0.2,
+          "ci_lb": 0.1189,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 80,
+          "sens": 0.65,
+          "ci_lb": 0.5352,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 74,
+          "sens": 0.5676,
+          "ci_lb": 0.4472,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 80,
+          "sens": 0.95,
+          "ci_lb": 0.8769,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 80,
+          "sens": 0.9375,
+          "ci_lb": 0.8601,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 80,
+          "sens": 0.75,
+          "ci_lb": 0.6406,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 80,
+          "sens": 0.7,
+          "ci_lb": 0.5872,
+          "stage1": "PASS"
+        }
+      },
+      "annotator_1": {
+        "qwen7b": {
+          "n_unsafe": 72,
+          "sens": 0.8889,
+          "ci_lb": 0.7928,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 72,
+          "sens": 0.1806,
+          "ci_lb": 0.0998,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 72,
+          "sens": 0.2083,
+          "ci_lb": 0.1216,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 72,
+          "sens": 0.6389,
+          "ci_lb": 0.5171,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 68,
+          "sens": 0.5882,
+          "ci_lb": 0.4623,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 72,
+          "sens": 0.9583,
+          "ci_lb": 0.883,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 72,
+          "sens": 0.9861,
+          "ci_lb": 0.925,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 72,
+          "sens": 0.7639,
+          "ci_lb": 0.6491,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 72,
+          "sens": 0.7083,
+          "ci_lb": 0.5893,
+          "stage1": "PASS"
+        }
+      },
+      "annotator_2": {
+        "qwen7b": {
+          "n_unsafe": 73,
+          "sens": 0.9041,
+          "ci_lb": 0.8124,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 73,
+          "sens": 0.1918,
+          "ci_lb": 0.109,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 73,
+          "sens": 0.2192,
+          "ci_lb": 0.1308,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 73,
+          "sens": 0.6301,
+          "ci_lb": 0.5091,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 68,
+          "sens": 0.5588,
+          "ci_lb": 0.4332,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 73,
+          "sens": 0.9589,
+          "ci_lb": 0.8846,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 73,
+          "sens": 0.9452,
+          "ci_lb": 0.8656,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 73,
+          "sens": 0.7534,
+          "ci_lb": 0.6386,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 73,
+          "sens": 0.7123,
+          "ci_lb": 0.5945,
+          "stage1": "PASS"
+        }
+      },
+      "disagree_unsafe": {
+        "qwen7b": {
+          "n_unsafe": 80,
+          "sens": 0.875,
+          "ci_lb": 0.7821,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 80,
+          "sens": 0.1875,
+          "ci_lb": 0.1089,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 80,
+          "sens": 0.2,
+          "ci_lb": 0.1189,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 80,
+          "sens": 0.65,
+          "ci_lb": 0.5352,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 74,
+          "sens": 0.5676,
+          "ci_lb": 0.4472,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 80,
+          "sens": 0.95,
+          "ci_lb": 0.8769,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 80,
+          "sens": 0.9375,
+          "ci_lb": 0.8601,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 80,
+          "sens": 0.75,
+          "ci_lb": 0.6406,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 80,
+          "sens": 0.7,
+          "ci_lb": 0.5872,
+          "stage1": "PASS"
+        }
+      },
+      "disagree_safe": {
+        "qwen7b": {
+          "n_unsafe": 65,
+          "sens": 0.9231,
+          "ci_lb": 0.8295,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 65,
+          "sens": 0.1846,
+          "ci_lb": 0.0992,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 65,
+          "sens": 0.2308,
+          "ci_lb": 0.1353,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 65,
+          "sens": 0.6154,
+          "ci_lb": 0.4864,
+          "stage1": "FAIL"
+        },
+        "llama31_8b": {
+          "n_unsafe": 62,
+          "sens": 0.5806,
+          "ci_lb": 0.4485,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 65,
+          "sens": 0.9692,
+          "ci_lb": 0.8932,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 65,
+          "sens": 1.0,
+          "ci_lb": 0.9448,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 65,
+          "sens": 0.7692,
+          "ci_lb": 0.6481,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 65,
+          "sens": 0.7231,
+          "ci_lb": 0.5981,
+          "stage1": "PASS"
+        }
+      }
+    },
+    "beavertails": {
+      "adjudicated": {
+        "qwen7b": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 43,
+          "sens": 0.4419,
+          "ci_lb": 0.2908,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 43,
+          "sens": 0.2558,
+          "ci_lb": 0.1352,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 43,
+          "sens": 0.814,
+          "ci_lb": 0.666,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 41,
+          "sens": 0.5366,
+          "ci_lb": 0.3742,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 43,
+          "sens": 0.9535,
+          "ci_lb": 0.8419,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 43,
+          "sens": 0.8372,
+          "ci_lb": 0.693,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 43,
+          "sens": 0.7209,
+          "ci_lb": 0.5633,
+          "stage1": "PASS"
+        }
+      },
+      "annotator_1": {
+        "qwen7b": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 43,
+          "sens": 0.4419,
+          "ci_lb": 0.2908,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 43,
+          "sens": 0.2558,
+          "ci_lb": 0.1352,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 43,
+          "sens": 0.814,
+          "ci_lb": 0.666,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 41,
+          "sens": 0.5366,
+          "ci_lb": 0.3742,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 43,
+          "sens": 0.9535,
+          "ci_lb": 0.8419,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 43,
+          "sens": 0.8372,
+          "ci_lb": 0.693,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 43,
+          "sens": 0.7209,
+          "ci_lb": 0.5633,
+          "stage1": "PASS"
+        }
+      },
+      "annotator_2": {
+        "qwen7b": {
+          "n_unsafe": 41,
+          "sens": 0.9512,
+          "ci_lb": 0.8347,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 41,
+          "sens": 0.4634,
+          "ci_lb": 0.3066,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 41,
+          "sens": 0.2683,
+          "ci_lb": 0.1422,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 41,
+          "sens": 0.8049,
+          "ci_lb": 0.6513,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 39,
+          "sens": 0.5385,
+          "ci_lb": 0.3718,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 41,
+          "sens": 0.9756,
+          "ci_lb": 0.8714,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 41,
+          "sens": 0.9512,
+          "ci_lb": 0.8347,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 41,
+          "sens": 0.8537,
+          "ci_lb": 0.7083,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 41,
+          "sens": 0.7317,
+          "ci_lb": 0.5706,
+          "stage1": "PASS"
+        }
+      },
+      "disagree_unsafe": {
+        "qwen7b": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 43,
+          "sens": 0.4419,
+          "ci_lb": 0.2908,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 43,
+          "sens": 0.2558,
+          "ci_lb": 0.1352,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 43,
+          "sens": 0.814,
+          "ci_lb": 0.666,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 41,
+          "sens": 0.5366,
+          "ci_lb": 0.3742,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 43,
+          "sens": 0.9535,
+          "ci_lb": 0.8419,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 43,
+          "sens": 0.9302,
+          "ci_lb": 0.8094,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 43,
+          "sens": 0.8372,
+          "ci_lb": 0.693,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 43,
+          "sens": 0.7209,
+          "ci_lb": 0.5633,
+          "stage1": "PASS"
+        }
+      },
+      "disagree_safe": {
+        "qwen7b": {
+          "n_unsafe": 41,
+          "sens": 0.9512,
+          "ci_lb": 0.8347,
+          "stage1": "PASS"
+        },
+        "llama3b": {
+          "n_unsafe": 41,
+          "sens": 0.4634,
+          "ci_lb": 0.3066,
+          "stage1": "FAIL"
+        },
+        "mistral7b": {
+          "n_unsafe": 41,
+          "sens": 0.2683,
+          "ci_lb": 0.1422,
+          "stage1": "FAIL"
+        },
+        "llamaguard3_1b": {
+          "n_unsafe": 41,
+          "sens": 0.8049,
+          "ci_lb": 0.6513,
+          "stage1": "PASS"
+        },
+        "llama31_8b": {
+          "n_unsafe": 39,
+          "sens": 0.5385,
+          "ci_lb": 0.3718,
+          "stage1": "FAIL"
+        },
+        "gemma2_9b": {
+          "n_unsafe": 41,
+          "sens": 0.9756,
+          "ci_lb": 0.8714,
+          "stage1": "PASS"
+        },
+        "phi3_medium": {
+          "n_unsafe": 41,
+          "sens": 0.9512,
+          "ci_lb": 0.8347,
+          "stage1": "PASS"
+        },
+        "wildguard": {
+          "n_unsafe": 41,
+          "sens": 0.8537,
+          "ci_lb": 0.7083,
+          "stage1": "PASS"
+        },
+        "shieldgemma_9b": {
+          "n_unsafe": 41,
+          "sens": 0.7317,
+          "ci_lb": 0.5706,
+          "stage1": "PASS"
+        }
+      }
+    }
+  },
+  "summary": {
+    "n_alternative_cells": 180,
+    "n_flips": 7,
+    "flips": [
+      {
+        "source": "harmful",
+        "judge": "llama3b",
+        "rule": "annotator_1",
+        "adjudicated": "FAIL",
+        "alt": "PASS",
+        "adjudicated_ci_lb": 0.4803,
+        "alt_ci_lb": 0.5302
+      },
+      {
+        "source": "harmful",
+        "judge": "llamaguard3_1b",
+        "rule": "annotator_2",
+        "adjudicated": "PASS",
+        "alt": "FAIL",
+        "adjudicated_ci_lb": 0.5291,
+        "alt_ci_lb": 0.4903
+      },
+      {
+        "source": "harmful",
+        "judge": "llama3b",
+        "rule": "disagree_safe",
+        "adjudicated": "FAIL",
+        "alt": "PASS",
+        "adjudicated_ci_lb": 0.4803,
+        "alt_ci_lb": 0.5539
+      },
+      {
+        "source": "sensitive",
+        "judge": "wildguard",
+        "rule": "annotator_1",
+        "adjudicated": "FAIL",
+        "alt": "PASS",
+        "adjudicated_ci_lb": 0.4637,
+        "alt_ci_lb": 0.5346
+      },
+      {
+        "source": "sensitive",
+        "judge": "wildguard",
+        "rule": "annotator_2",
+        "adjudicated": "FAIL",
+        "alt": "PASS",
+        "adjudicated_ci_lb": 0.4637,
+        "alt_ci_lb": 0.5131
+      },
+      {
+        "source": "sensitive",
+        "judge": "wildguard",
+        "rule": "disagree_safe",
+        "adjudicated": "FAIL",
+        "alt": "PASS",
+        "adjudicated_ci_lb": 0.4637,
+        "alt_ci_lb": 0.6298
+      },
+      {
+        "source": "xstest",
+        "judge": "llamaguard3_1b",
+        "rule": "disagree_safe",
+        "adjudicated": "PASS",
+        "alt": "FAIL",
+        "adjudicated_ci_lb": 0.5352,
+        "alt_ci_lb": 0.4864
+      }
+    ]
+  }
+}
