@@ -4,8 +4,9 @@ The main-text coverage table reports point estimates to three decimals. The
 reviewer correctly notes that some rest on few emissions (the split arm at n=100
 is 33/33 = 1.000), so a point estimate alone overstates the evidence. This emits
 a supplementary table giving, for every (variant, n) cell, the coverage as a
-numerator/denominator fraction with a Clopper-Pearson 95% interval and the
-Monte-Carlo standard error, computed from the same B=2000 replicate counts.
+numerator/denominator fraction with an exact Clopper-Pearson 95% interval
+(we do not report a normal-approximation standard error, which is zero at
+boundary cells such as 33/33).
 """
 import json
 import os
@@ -69,7 +70,8 @@ CAP = ("Monte-Carlo conditional-coverage estimates of the main-text coverage tab
        "number emitted, with a Clopper--Pearson $95\\%$ interval. The point estimates are tight "
        "where many replicates emit (the unadjusted rule at $n\\geq 100$ rests on $1{,}700$ or "
        "more emissions) and weak where few do: the split arm at $n=100$ is $33/33$, so its "
-       "$1.000$ estimate carries a one-sided interval reaching down to $0.894$ and should be "
+       "$1.000$ estimate carries a two-sided $95\%$ Clopper--Pearson interval whose lower endpoint "
+       "is $0.894$ and should be "
        "read as consistent-with-conservative rather than as established exact coverage. We use "
        "the exact Clopper--Pearson interval rather than a normal-approximation standard error, "
        "which degenerates to zero at boundary cells such as the $33/33$ split arm.")

@@ -10,7 +10,7 @@ a GPU; all are CPU re-analyses of the released predictions.
 | Script | Produces | Paper location |
 | --- | --- | --- |
 | `exp_selective_inference.py` | Monte-Carlo post-selection coverage, Bonferroni/BH/split variants | main-text coverage table |
-| `make_coverage_ci_table.py` | Clopper-Pearson intervals + MC standard errors on each coverage cell | supplementary coverage-CI table |
+| `make_coverage_ci_table.py` | exact Clopper-Pearson intervals on each coverage cell | supplementary coverage-CI table |
 | `exp_design_weighted_stage1.py` | Hajek design-weighted Stage-1 bounds with a Rao-Wu rescaled bootstrap (K=9) | supplementary design-weighted table |
 | `make_design_weighted_table.py` | LaTeX for the design-weighted table | supplementary |
 | `exp_spec_tiebreak.py` | specificity/sensitivity Stage-2 tie-break MAE, signed bias, FPR, false-positive counts | supplementary tie-break table |
