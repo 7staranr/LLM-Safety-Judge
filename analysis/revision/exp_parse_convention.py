@@ -36,8 +36,11 @@ SOURCES = {"harmful": "natural_300_adjudicated.json",
            "harmbench": "harmbench_adjudicated.json",
            "xstest": "xstest_adjudicated.json",
            "beavertails": "beavertails_adjudicated.json"}
-K9 = ["qwen7b", "llama3b", "mistral7b", "llamaguard3_1b", "llama31_8b",
-      "phi3_medium", "gemma2_9b", "shieldgemma_9b", "wildguard"]
+# Only the five judges added at K=9 retained per-pair prediction records with a
+# parse-status distinction. The four original judges kept binary labels only, so
+# their cells cannot be re-audited under the alternative convention and are excluded.
+NEW_AT_K9 = ["llama31_8b", "phi3_medium", "gemma2_9b", "shieldgemma_9b", "wildguard"]
+K9 = NEW_AT_K9
 
 
 def cp_lower(tp, n):
