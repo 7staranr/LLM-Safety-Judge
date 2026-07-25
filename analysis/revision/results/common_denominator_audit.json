@@ -1,0 +1,237 @@
+{
+  "conditions": {
+    "1to0": {
+      "n_common": 80,
+      "human_asr": 0.3,
+      "per_judge_common_denominator": {
+        "mistral7b": 0.05,
+        "shieldgemma_9b": 0.1625,
+        "llama31_8b": 0.2,
+        "llama3b": 0.2875,
+        "gemma2_9b": 0.3375,
+        "wildguard": 0.3,
+        "qwen7b": 0.425,
+        "phi3_medium": 0.625,
+        "llamaguard3_1b": 0.3
+      },
+      "per_judge_own_denominator": {
+        "mistral7b": {
+          "n": 100,
+          "asr": 0.04
+        },
+        "shieldgemma_9b": {
+          "n": 100,
+          "asr": 0.13
+        },
+        "llama31_8b": {
+          "n": 100,
+          "asr": 0.17
+        },
+        "llama3b": {
+          "n": 100,
+          "asr": 0.28
+        },
+        "gemma2_9b": {
+          "n": 100,
+          "asr": 0.27
+        },
+        "wildguard": {
+          "n": 90,
+          "asr": 0.2667
+        },
+        "qwen7b": {
+          "n": 100,
+          "asr": 0.38
+        },
+        "phi3_medium": {
+          "n": 90,
+          "asr": 0.6222
+        },
+        "llamaguard3_1b": {
+          "n": 100,
+          "asr": 0.26
+        }
+      },
+      "spread_max_over_min": 12.5,
+      "spread_judges": [
+        "phi3_medium",
+        "mistral7b"
+      ],
+      "underestimation_human_over_min": 6.0
+    },
+    "2to1": {
+      "n_common": 80,
+      "human_asr": 0.125,
+      "per_judge_common_denominator": {
+        "mistral7b": 0.0125,
+        "shieldgemma_9b": 0.0375,
+        "llama31_8b": 0.0875,
+        "llama3b": 0.1875,
+        "gemma2_9b": 0.1125,
+        "wildguard": 0.1125,
+        "qwen7b": 0.1375,
+        "phi3_medium": 0.375,
+        "llamaguard3_1b": 0.1625
+      },
+      "per_judge_own_denominator": {
+        "mistral7b": {
+          "n": 100,
+          "asr": 0.01
+        },
+        "shieldgemma_9b": {
+          "n": 100,
+          "asr": 0.03
+        },
+        "llama31_8b": {
+          "n": 100,
+          "asr": 0.07
+        },
+        "llama3b": {
+          "n": 100,
+          "asr": 0.17
+        },
+        "gemma2_9b": {
+          "n": 100,
+          "asr": 0.09
+        },
+        "wildguard": {
+          "n": 94,
+          "asr": 0.0957
+        },
+        "qwen7b": {
+          "n": 100,
+          "asr": 0.12
+        },
+        "phi3_medium": {
+          "n": 85,
+          "asr": 0.3765
+        },
+        "llamaguard3_1b": {
+          "n": 100,
+          "asr": 0.13
+        }
+      },
+      "spread_max_over_min": 30.0,
+      "spread_judges": [
+        "phi3_medium",
+        "mistral7b"
+      ],
+      "underestimation_human_over_min": 10.0
+    },
+    "1to1": {
+      "n_common": 83,
+      "human_asr": 0.0843,
+      "per_judge_common_denominator": {
+        "mistral7b": 0.012,
+        "shieldgemma_9b": 0.0241,
+        "llama31_8b": 0.0241,
+        "llama3b": 0.1807,
+        "gemma2_9b": 0.0602,
+        "wildguard": 0.0602,
+        "qwen7b": 0.1084,
+        "phi3_medium": 0.3614,
+        "llamaguard3_1b": 0.0843
+      },
+      "per_judge_own_denominator": {
+        "mistral7b": {
+          "n": 100,
+          "asr": 0.01
+        },
+        "shieldgemma_9b": {
+          "n": 100,
+          "asr": 0.03
+        },
+        "llama31_8b": {
+          "n": 100,
+          "asr": 0.02
+        },
+        "llama3b": {
+          "n": 100,
+          "asr": 0.15
+        },
+        "gemma2_9b": {
+          "n": 100,
+          "asr": 0.05
+        },
+        "wildguard": {
+          "n": 94,
+          "asr": 0.0532
+        },
+        "qwen7b": {
+          "n": 100,
+          "asr": 0.09
+        },
+        "phi3_medium": {
+          "n": 89,
+          "asr": 0.3483
+        },
+        "llamaguard3_1b": {
+          "n": 100,
+          "asr": 0.08
+        }
+      },
+      "spread_max_over_min": 30.12,
+      "spread_judges": [
+        "phi3_medium",
+        "mistral7b"
+      ],
+      "underestimation_human_over_min": 7.02
+    }
+  },
+  "per_judge_nonparse": {
+    "mistral7b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "shieldgemma_9b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "llama31_8b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "llama3b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "gemma2_9b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "wildguard": {
+      "n_scored": 278,
+      "n_total": 300,
+      "n_nonparse": 22,
+      "nonparse_rate": 0.0733
+    },
+    "qwen7b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    },
+    "phi3_medium": {
+      "n_scored": 264,
+      "n_total": 300,
+      "n_nonparse": 36,
+      "nonparse_rate": 0.12
+    },
+    "llamaguard3_1b": {
+      "n_scored": 300,
+      "n_total": 300,
+      "n_nonparse": 0,
+      "nonparse_rate": 0.0
+    }
+  }
+}
