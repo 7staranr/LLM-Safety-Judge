@@ -28,7 +28,9 @@ per-condition table):
       positives, or a condition-level CP lower bound below tau_min);
   F2  the denominator Sens + Spec - 1 is at most 0.10 (signed, so a negative
       denominator also fails);
-  F3  the corrected estimate falls outside [-0.05, 1.05] before any clipping.
+  F3  the corrected estimate falls outside [-0.05, 1.05] before any clipping;
+  F4  no independent evaluation predictions exist for the judge, so the only
+      available raw rate comes from the same records used for calibration.
 A condition is reported only when no criterion fires.
 
 Judge pool. The paper's per-condition table is restricted to the original K=4
@@ -156,12 +158,22 @@ def run(root: str, n_boot: int, seed: int, pool: str = "k4") -> dict:
             if per_seed:
                 raw = float(np.mean(per_seed))
                 raw_basis = f"evaluation set, {len(per_seed)} seeds"
+                has_eval = True
             else:
+                # No independent evaluation predictions for this judge. We report
+                # the calibration-pair rate for reference but suppress the
+                # correction (F4): correcting a rate with sensitivity and
+                # specificity estimated from the very same records makes the
+                # Rogan-Gladen expression collapse to the observed prevalence.
                 raw = sum(1 for _, p in pairs if p) / len(pairs)
-                raw_basis = "calibration pairs (evaluation predictions not bundled)"
+                raw_basis = "calibration pairs; correction suppressed (no evaluation predictions)"
+                has_eval = False
 
             corrected = ((raw + spec - 1.0) / denom) if abs(denom) > 1e-12 else None
             codes = _failure_codes(cm, denom, corrected)
+            if not has_eval:
+                codes.append("F4")
+                corrected = None
             reportable = not codes
 
             conditions[ratio] = {

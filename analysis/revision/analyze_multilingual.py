@@ -56,8 +56,15 @@ def evaluate(judge_name, source, pred_map, mapping):
 
 
 def main():
+    paths = sorted(glob(os.path.join(GPU_DIR, "*.json")))
+    if not paths:
+        raise SystemExit(
+            f"No judge prediction files found in {GPU_DIR}. Refusing to overwrite "
+            f"{OUT} with an empty result; bundle the zh-judge prediction JSONs first."
+        )
+
     results = {}
-    for path in sorted(glob(os.path.join(GPU_DIR, "*.json"))):
+    for path in paths:
         judge, source, preds = load_predictions(path)
         results.setdefault(judge, {})
         results[judge][source] = {

@@ -47,7 +47,9 @@ def run(records: list, sizes: list, n_bootstrap: int, seed: int) -> dict:
                 if m is not None and m.stage1 == "PASS":
                     pass_counts[judge] += 1
             decision = select_primary_judge({j: m for j, m in metrics.items() if m is not None})
-            if decision["selected"] is None:
+            # A LowConfidence fallback returns a judge but is not a screened
+            # emission; only SELECT counts toward the certified selection rate.
+            if decision["status"] != "SELECT":
                 n_abstain += 1
             else:
                 selections[decision["selected"]] += 1

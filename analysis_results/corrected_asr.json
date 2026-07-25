@@ -90,14 +90,16 @@
           "denominator": 0.6133,
           "human_asr": 0.25,
           "raw_asr": 0.26,
-          "raw_basis": "calibration pairs (evaluation predictions not bundled)",
-          "corrected_asr": 0.25,
-          "failures": [],
-          "status": "stable",
+          "raw_basis": "calibration pairs; correction suppressed (no evaluation predictions)",
+          "corrected_asr": null,
+          "failures": [
+            "F4"
+          ],
+          "status": "suppressed",
           "corrected_bootstrap": {
-            "mean": 0.25285530001861384,
-            "ci_lo": 0.13351892678988503,
-            "ci_hi": 0.39384418503096497
+            "mean": null,
+            "ci_lo": null,
+            "ci_hi": null
           }
         },
         "2to1": {
@@ -110,10 +112,11 @@
           "denominator": 0.5222,
           "human_asr": 0.1,
           "raw_asr": 0.13,
-          "raw_basis": "calibration pairs (evaluation predictions not bundled)",
-          "corrected_asr": 0.1,
+          "raw_basis": "calibration pairs; correction suppressed (no evaluation predictions)",
+          "corrected_asr": null,
           "failures": [
-            "F1"
+            "F1",
+            "F4"
           ],
           "status": "suppressed",
           "corrected_bootstrap": {
@@ -132,10 +135,11 @@
           "denominator": 0.682,
           "human_asr": 0.07,
           "raw_asr": 0.08,
-          "raw_basis": "calibration pairs (evaluation predictions not bundled)",
-          "corrected_asr": 0.07,
+          "raw_basis": "calibration pairs; correction suppressed (no evaluation predictions)",
+          "corrected_asr": null,
           "failures": [
-            "F1"
+            "F1",
+            "F4"
           ],
           "status": "suppressed",
           "corrected_bootstrap": {

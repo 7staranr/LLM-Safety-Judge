@@ -190,8 +190,12 @@ def select_by_rule(metrics: Mapping[str, JudgeMetrics], rule: str) -> tuple:
     if not present:
         return None, True
     if rule == "R5_protocol":
-        selected = select_primary_judge(present)["selected"]
-        return selected, selected is None
+        decision = select_primary_judge(present)
+        # Only a SCREENED verdict counts as a certified emission. A LowConfidence
+        # fallback returns a judge but is an abstention from screened reporting,
+        # so it must not be counted as an emission by the downstream analyses.
+        certified = decision["status"] == "SELECT"
+        return (decision["selected"] if certified else None), not certified
     attr = RULE_ATTR[rule]
     selected = sorted(present, key=lambda j: (-getattr(present[j], attr), j))[0]
     return selected, False

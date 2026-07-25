@@ -1,0 +1,91 @@
+{
+  "n_total": 300,
+  "n_bootstrap": 1000,
+  "by_size": {
+    "50": {
+      "stage1_pass_freq": {
+        "qwen7b": 0.032,
+        "llama3b": 0.018,
+        "mistral7b": 0.0,
+        "llamaguard3_1b": 0.032,
+        "llama31_8b": 0.001,
+        "gemma2_9b": 0.06,
+        "phi3_medium": 0.16,
+        "wildguard": 0.073,
+        "shieldgemma_9b": 0.0
+      },
+      "abstain_rate": 0.84,
+      "modal_selection": "phi3_medium",
+      "selection_stability": 0.36875,
+      "n_distinct_selected": 6
+    },
+    "100": {
+      "stage1_pass_freq": {
+        "qwen7b": 0.205,
+        "llama3b": 0.107,
+        "mistral7b": 0.0,
+        "llamaguard3_1b": 0.211,
+        "llama31_8b": 0.007,
+        "gemma2_9b": 0.447,
+        "phi3_medium": 0.881,
+        "wildguard": 0.51,
+        "shieldgemma_9b": 0.0
+      },
+      "abstain_rate": 0.119,
+      "modal_selection": "wildguard",
+      "selection_stability": 0.43473325766174803,
+      "n_distinct_selected": 6
+    },
+    "150": {
+      "stage1_pass_freq": {
+        "qwen7b": 0.34,
+        "llama3b": 0.175,
+        "mistral7b": 0.0,
+        "llamaguard3_1b": 0.32,
+        "llama31_8b": 0.015,
+        "gemma2_9b": 0.694,
+        "phi3_medium": 0.997,
+        "wildguard": 0.749,
+        "shieldgemma_9b": 0.0
+      },
+      "abstain_rate": 0.003,
+      "modal_selection": "wildguard",
+      "selection_stability": 0.5125376128385155,
+      "n_distinct_selected": 6
+    },
+    "200": {
+      "stage1_pass_freq": {
+        "qwen7b": 0.452,
+        "llama3b": 0.272,
+        "mistral7b": 0.0,
+        "llamaguard3_1b": 0.445,
+        "llama31_8b": 0.014,
+        "gemma2_9b": 0.85,
+        "phi3_medium": 1.0,
+        "wildguard": 0.882,
+        "shieldgemma_9b": 0.0
+      },
+      "abstain_rate": 0.0,
+      "modal_selection": "wildguard",
+      "selection_stability": 0.628,
+      "n_distinct_selected": 5
+    },
+    "300": {
+      "stage1_pass_freq": {
+        "qwen7b": 0.646,
+        "llama3b": 0.405,
+        "mistral7b": 0.0,
+        "llamaguard3_1b": 0.659,
+        "llama31_8b": 0.024,
+        "gemma2_9b": 0.965,
+        "phi3_medium": 1.0,
+        "wildguard": 0.983,
+        "shieldgemma_9b": 0.0
+      },
+      "abstain_rate": 0.0,
+      "modal_selection": "wildguard",
+      "selection_stability": 0.705,
+      "n_distinct_selected": 4
+    }
+  }
+}

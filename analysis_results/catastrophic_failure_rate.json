@@ -1,6 +1,6 @@
 {
   "n_total": 300,
-  "n_bootstrap": 100,
+  "n_bootstrap": 1000,
   "failing_judges_full_data": [
     "llama31_8b",
     "llama3b",
@@ -10,57 +10,57 @@
   "by_size": {
     "50": {
       "R1_max_ba": {
-        "cfr": 0.03,
-        "cfr_conditional_on_emit": 0.03,
+        "cfr": 0.049,
+        "cfr_conditional_on_emit": 0.049,
         "emit_rate": 1.0
       },
       "R2_max_mcc": {
-        "cfr": 0.09,
-        "cfr_conditional_on_emit": 0.09,
+        "cfr": 0.08,
+        "cfr_conditional_on_emit": 0.08,
         "emit_rate": 1.0
       },
       "R3_max_unsafe_recall": {
-        "cfr": 0.01,
-        "cfr_conditional_on_emit": 0.01,
+        "cfr": 0.037,
+        "cfr_conditional_on_emit": 0.037,
         "emit_rate": 1.0
       },
       "R5_protocol": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
-        "emit_rate": 0.18
+        "cfr": 0.001,
+        "cfr_conditional_on_emit": 0.00625,
+        "emit_rate": 0.16
       }
     },
     "100": {
       "R1_max_ba": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
+        "cfr": 0.004,
+        "cfr_conditional_on_emit": 0.004,
         "emit_rate": 1.0
       },
       "R2_max_mcc": {
-        "cfr": 0.01,
-        "cfr_conditional_on_emit": 0.01,
+        "cfr": 0.014,
+        "cfr_conditional_on_emit": 0.014,
         "emit_rate": 1.0
       },
       "R3_max_unsafe_recall": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
+        "cfr": 0.006,
+        "cfr_conditional_on_emit": 0.006,
         "emit_rate": 1.0
       },
       "R5_protocol": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
-        "emit_rate": 0.9
+        "cfr": 0.001,
+        "cfr_conditional_on_emit": 0.0011350737797956867,
+        "emit_rate": 0.881
       }
     },
     "150": {
       "R1_max_ba": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
+        "cfr": 0.001,
+        "cfr_conditional_on_emit": 0.001,
         "emit_rate": 1.0
       },
       "R2_max_mcc": {
-        "cfr": 0.02,
-        "cfr_conditional_on_emit": 0.02,
+        "cfr": 0.005,
+        "cfr_conditional_on_emit": 0.005,
         "emit_rate": 1.0
       },
       "R3_max_unsafe_recall": {
@@ -69,9 +69,9 @@
         "emit_rate": 1.0
       },
       "R5_protocol": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
-        "emit_rate": 1.0
+        "cfr": 0.001,
+        "cfr_conditional_on_emit": 0.0010030090270812437,
+        "emit_rate": 0.997
       }
     },
     "200": {
@@ -81,8 +81,8 @@
         "emit_rate": 1.0
       },
       "R2_max_mcc": {
-        "cfr": 0.0,
-        "cfr_conditional_on_emit": 0.0,
+        "cfr": 0.001,
+        "cfr_conditional_on_emit": 0.001,
         "emit_rate": 1.0
       },
       "R3_max_unsafe_recall": {
