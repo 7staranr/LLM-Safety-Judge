@@ -2,9 +2,10 @@
 
 These scripts implement the analyses added during peer review. They accompany the
 supplementary material's revision section and the response to reviewers. Each
-reads the aggregated per-pair judge predictions and human labels released with the
-main package (`../../data/`, `../../protocol/`) or the aggregated result files in
-`results/`, and writes the numbers and LaTeX tables the paper cites. None require
+reads the released inputs through the loaders in `../../protocol/` (which resolve
+`../../human_annotation/` and `../../analysis_results/` once `DISTILL_ROOT` points
+at the repository root; see `../../data/README.md`), or the aggregated result files
+in `results/`, and writes the numbers and LaTeX tables the paper cites. None require
 a GPU; all are CPU re-analyses of the released predictions.
 
 | Script | Produces | Paper location |
