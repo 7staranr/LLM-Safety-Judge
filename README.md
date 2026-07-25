@@ -64,6 +64,7 @@ flags such as `--bootstrap`).
 | `cross_source_protocol_ablation.py` | Selection-rule ablation R1-R5 per source: the metric-only rules can pick a Stage-1-failing judge, R5 abstains instead. |
 | `ci_vs_point_estimate_ablation.py` | Confidence-interval filter vs. naive point-estimate filter; counts the over-confident admissions the CI rule prevents. |
 | `calibration_size_stress.py` | Bootstrap stress over calibration-set size: Stage-1 pass frequency, selection stability, and abstention rate. |
+| `calibration_size_stress_k4.py` | The same stress protocol restricted to the original K=4 pool, with Llama Guard 3-1B plotted explicitly (its aggregate counts match Qwen-7B's but 10/42 unsafe records differ, so the curves are not interchangeable). Source of the paper's stress-test figure. |
 | `catastrophic_failure_rate.py` | Catastrophic-failure rate (selecting a full-data Stage-1-failing judge) per rule and calibration size. |
 | `label_noise_robustness.py` | Stage-1 PASS/FAIL stability under five label-aggregation rules. |
 | `cross_source_ablation_kfold.py` | 5-fold cross-fitted MAE of each rule against human-estimated ASR. |
@@ -87,6 +88,7 @@ python analysis/ci_vs_point_estimate_ablation.py
 python analysis/label_noise_robustness.py
 python analysis/cross_source_ablation_kfold.py
 python analysis/calibration_size_stress.py --bootstrap 1000
+python analysis/calibration_size_stress_k4.py --bootstrap 1000
 python analysis/catastrophic_failure_rate.py --bootstrap 1000
 python analysis/corrected_asr.py --bootstrap 1000
 ```
