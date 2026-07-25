@@ -4,8 +4,11 @@ main-text label budgets (reviewer round-2, issue 6)."""
 import json
 import os
 
-HA = r"D:\Programming\distill_project_1\human_annotation"
-OUT = r"D:\Programming\distill_project_1\paper_ieee_access\figures\table_kappa.tex"
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("DISTILL_ROOT",
+                      os.path.abspath(os.path.join(HERE, "..", "..")))
+HA = os.path.join(ROOT, "human_annotation")
+OUT = os.path.join(ROOT, "figures", "table_kappa.tex")
 
 SOURCES = [
     ("Harmful (natural)", "natural_300_adjudicated.json"),

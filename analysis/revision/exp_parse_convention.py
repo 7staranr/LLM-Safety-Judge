@@ -24,8 +24,9 @@ from collections import defaultdict
 
 from scipy.stats import beta as beta_dist
 
-ROOT = r"D:\Programming\distill_project_1"
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("DISTILL_ROOT",
+                      os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "parse_convention.json")
 PRED = os.path.join(ROOT, "analysis_results", "local_judge_predictions")
 

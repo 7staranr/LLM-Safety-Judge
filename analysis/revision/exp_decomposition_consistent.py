@@ -24,7 +24,9 @@ import os
 
 import numpy as np
 
-ROOT = r"D:\Programming\distill_project_1"
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("DISTILL_ROOT",
+                      os.path.abspath(os.path.join(HERE, "..", "..")))
 SRC = os.path.join(ROOT, "analysis_results", "corrected_asr_human_gt_v2.json")
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results",
                    "decomposition_consistent.json")

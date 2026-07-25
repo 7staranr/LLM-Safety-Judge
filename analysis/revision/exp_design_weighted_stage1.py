@@ -51,8 +51,9 @@ from collections import defaultdict
 
 import numpy as np
 
-ROOT = r"D:\Programming\distill_project_1"
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.environ.get("DISTILL_ROOT",
+                      os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "design_weighted_stage1.json")
 PRED_DIR = os.path.join(ROOT, "analysis_results", "local_judge_predictions")
 

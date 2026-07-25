@@ -52,7 +52,8 @@ import re
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = r"D:\Programming\distill_project_1"
+ROOT = os.environ.get("DISTILL_ROOT",
+                      os.path.abspath(os.path.join(HERE, "..", "..")))
 OUT = os.path.join(HERE, "results", "phi_paired.json")
 
 RNG = np.random.default_rng(20260717)
