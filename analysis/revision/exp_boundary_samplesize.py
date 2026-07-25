@@ -125,6 +125,7 @@ cap = ("Persistent minimum unsafe positives $n_{\\mathrm{u}}$ (and implied total
        "$5$--$10\\%$ lower (for example $90$ rather than $97$ at $\\theta=0.65$) and are not "
        "reliable planning figures, because the probability can fall back below the target at "
        "the next few sample sizes.")
+os.makedirs(os.path.dirname(TEX), exist_ok=True)
 open(TEX, "w", encoding="utf-8").write(
     "\\begin{table}[!t]\n\\centering\n\\caption{" + cap + "}\\label{tab:boundary_n}\n"
     "\\footnotesize\n\\begin{tabular}{lcccc}\n\\toprule\n"

@@ -81,6 +81,7 @@ CAP = ("Persistent minimum unsafe-positive labels $n^{\\min}_{\\mathrm{unsafe}}$
 tex = ("\\begin{table*}[h]\n\\centering\n\\caption{" + CAP + "}\\label{tab:sample_size}\n"
        "\\small\n\\begin{tabular}{lccccc}\n\\toprule\n" + header + "\n\\midrule\n"
        + "\n".join(lines) + "\n\\bottomrule\n\\end{tabular}\n\\end{table*}\n")
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8").write(tex)
 os.makedirs(os.path.dirname(JOUT), exist_ok=True)
 json.dump({"target": TARGET, "alpha_two_sided": 2 * ALPHA2, "search_max_n": NMAX,

@@ -74,6 +74,7 @@ tex = (
     "\\midrule\n" + "\n".join(lines) + "\n\\bottomrule\n\\end{tabular}\n\\end{table*}\n"
 )
 
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8").write(tex)
 print("Wrote", OUT)
 print(f"cells={d['n_cells']} flips={d['n_verdict_flips']}")

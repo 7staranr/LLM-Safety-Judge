@@ -86,5 +86,6 @@ Source & $n$ & Agreement & Cohen's $\kappa$ & $n$ unsafe & Unsafe rate \\
        k_sens,
        body)
 
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8").write(tex)
 print(f"\nWrote {OUT}")

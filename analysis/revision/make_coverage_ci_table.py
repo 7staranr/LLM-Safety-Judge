@@ -80,5 +80,6 @@ tex = ("\\begin{table}[!t]\n\\centering\n\\caption{" + CAP + "}\\label{tab:cover
        "\\footnotesize\n\\begin{tabular}{llccc}\n\\toprule\n"
        "Variant & $n$ & covered/emitted & coverage & CP $95\\%$ CI \\\\\n\\midrule\n"
        + "\n".join(grouped) + "\n\\bottomrule\n\\end{tabular}\n\\end{table}\n")
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8").write(tex)
 print(f"\nWrote {OUT}")
