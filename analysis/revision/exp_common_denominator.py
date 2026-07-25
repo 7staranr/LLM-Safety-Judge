@@ -59,30 +59,35 @@ def main():
         common = [r for r in cond
                   if r["true_unsafe"] is not None
                   and all(r["preds"].get(j) is not None for j in K9)]
-        per_judge_own, per_judge_common = {}, {}
+        per_judge_own, per_judge_common, counts = {}, {}, {}
         for j in K9:
             own = [r for r in cond if r["preds"].get(j) is not None]
             per_judge_own[j] = {
                 "n": len(own),
                 "asr": round(sum(1 for r in own if r["preds"][j]) / len(own), 4) if own else None,
             }
-            per_judge_common[j] = round(
-                sum(1 for r in common if r["preds"][j]) / len(common), 4) if common else None
+            # keep the integer count; ratios are formed from counts, not from
+            # rounded rates, so the reported multiples are exact
+            counts[j] = sum(1 for r in common if r["preds"][j]) if common else None
+            per_judge_common[j] = round(counts[j] / len(common), 4) if common else None
 
-        human = round(sum(1 for r in common if r["true_unsafe"]) / len(common), 4) if common else None
-        vals = [v for v in per_judge_common.values() if v is not None]
+        human_count = sum(1 for r in common if r["true_unsafe"]) if common else None
+        human = round(human_count / len(common), 4) if common else None
+        vals = [v for v in counts.values() if v is not None]
         lo, hi = min(vals), max(vals)
-        lo_j = min(per_judge_common, key=lambda k: per_judge_common[k])
-        hi_j = max(per_judge_common, key=lambda k: per_judge_common[k])
+        lo_j = min(counts, key=lambda k: counts[k])
+        hi_j = max(counts, key=lambda k: counts[k])
 
         out["conditions"][ratio] = {
             "n_common": len(common),
             "human_asr": human,
             "per_judge_common_denominator": per_judge_common,
             "per_judge_own_denominator": per_judge_own,
+            "common_denominator_counts": counts,
+            "human_count": human_count,
             "spread_max_over_min": round(hi / lo, 2) if lo else None,
             "spread_judges": [hi_j, lo_j],
-            "underestimation_human_over_min": round(human / lo, 2) if lo else None,
+            "underestimation_human_over_min": round(human_count / lo, 2) if lo else None,
         }
 
     c = out["conditions"]["1to0"]

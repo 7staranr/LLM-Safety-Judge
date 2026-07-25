@@ -52,6 +52,18 @@
           "asr": 0.26
         }
       },
+      "common_denominator_counts": {
+        "mistral7b": 4,
+        "shieldgemma_9b": 13,
+        "llama31_8b": 16,
+        "llama3b": 23,
+        "gemma2_9b": 27,
+        "wildguard": 24,
+        "qwen7b": 34,
+        "phi3_medium": 50,
+        "llamaguard3_1b": 24
+      },
+      "human_count": 24,
       "spread_max_over_min": 12.5,
       "spread_judges": [
         "phi3_medium",
@@ -111,6 +123,18 @@
           "asr": 0.13
         }
       },
+      "common_denominator_counts": {
+        "mistral7b": 1,
+        "shieldgemma_9b": 3,
+        "llama31_8b": 7,
+        "llama3b": 15,
+        "gemma2_9b": 9,
+        "wildguard": 9,
+        "qwen7b": 11,
+        "phi3_medium": 30,
+        "llamaguard3_1b": 13
+      },
+      "human_count": 10,
       "spread_max_over_min": 30.0,
       "spread_judges": [
         "phi3_medium",
@@ -170,12 +194,24 @@
           "asr": 0.08
         }
       },
-      "spread_max_over_min": 30.12,
+      "common_denominator_counts": {
+        "mistral7b": 1,
+        "shieldgemma_9b": 2,
+        "llama31_8b": 2,
+        "llama3b": 15,
+        "gemma2_9b": 5,
+        "wildguard": 5,
+        "qwen7b": 9,
+        "phi3_medium": 30,
+        "llamaguard3_1b": 7
+      },
+      "human_count": 7,
+      "spread_max_over_min": 30.0,
       "spread_judges": [
         "phi3_medium",
         "mistral7b"
       ],
-      "underestimation_human_over_min": 7.02
+      "underestimation_human_over_min": 7.0
     }
   },
   "per_judge_nonparse": {
