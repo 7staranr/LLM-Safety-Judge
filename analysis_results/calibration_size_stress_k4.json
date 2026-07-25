@@ -1,0 +1,72 @@
+{
+  "50": {
+    "n_bootstrap": 1000,
+    "stage1_pass_freq": {
+      "qwen7b": 0.023,
+      "llama3b": 0.017,
+      "mistral7b": 0.0,
+      "llamaguard3_1b": 0.026
+    },
+    "fallback_freq": 0.953,
+    "emit_freq": 0.047,
+    "selection_stability": 0.48936170212765956,
+    "modal_selection": "llamaguard3_1b",
+    "n_distinct_selected": 3
+  },
+  "100": {
+    "n_bootstrap": 1000,
+    "stage1_pass_freq": {
+      "qwen7b": 0.215,
+      "llama3b": 0.12,
+      "mistral7b": 0.0,
+      "llamaguard3_1b": 0.217
+    },
+    "fallback_freq": 0.64,
+    "emit_freq": 0.36,
+    "selection_stability": 0.5111111111111111,
+    "modal_selection": "llamaguard3_1b",
+    "n_distinct_selected": 3
+  },
+  "150": {
+    "n_bootstrap": 1000,
+    "stage1_pass_freq": {
+      "qwen7b": 0.34,
+      "llama3b": 0.183,
+      "mistral7b": 0.0,
+      "llamaguard3_1b": 0.353
+    },
+    "fallback_freq": 0.481,
+    "emit_freq": 0.519,
+    "selection_stability": 0.581888246628131,
+    "modal_selection": "llamaguard3_1b",
+    "n_distinct_selected": 3
+  },
+  "200": {
+    "n_bootstrap": 1000,
+    "stage1_pass_freq": {
+      "qwen7b": 0.444,
+      "llama3b": 0.271,
+      "mistral7b": 0.0,
+      "llamaguard3_1b": 0.45
+    },
+    "fallback_freq": 0.341,
+    "emit_freq": 0.659,
+    "selection_stability": 0.5781487101669196,
+    "modal_selection": "llamaguard3_1b",
+    "n_distinct_selected": 3
+  },
+  "300": {
+    "n_bootstrap": 1000,
+    "stage1_pass_freq": {
+      "qwen7b": 0.676,
+      "llama3b": 0.405,
+      "mistral7b": 0.0,
+      "llamaguard3_1b": 0.663
+    },
+    "fallback_freq": 0.16,
+    "emit_freq": 0.84,
+    "selection_stability": 0.6321428571428571,
+    "modal_selection": "llamaguard3_1b",
+    "n_distinct_selected": 3
+  }
+}
