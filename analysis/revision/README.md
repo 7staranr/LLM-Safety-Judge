@@ -18,6 +18,7 @@ a GPU; all are CPU re-analyses of the released predictions.
 | `exp_boundary_samplesize.py` | persistent boundary sample-size thresholds | supplementary boundary table |
 | `make_sample_size_table.py` | LaTeX for the theta x tau sample-size grid | supplementary |
 | `exp_phi_paired.py` | Phi matched-block contrast, sign-flip and paired-t p-values, prompt bootstrap | main-text Phi subsection |
+| `exp_common_denominator.py` | common-denominator deployment audit; separates judge-to-judge spread from the underestimation factor | main-text deployment-audit paragraph |
 | `exp_decomposition_consistent.py` | filter/correction decomposition on one consistent basis | main-text decomposition |
 | `exp_parse_convention.py` | non-parse rates and both parse conventions' Stage-1 verdicts | supplementary parsing note |
 | `exp_tau_sensitivity.py` | tau_min sweep over the K=9 x 7-source grid | main-text threshold sensitivity |
