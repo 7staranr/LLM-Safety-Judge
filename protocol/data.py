@@ -92,15 +92,15 @@ LABEL_RULES = ["adjudicated", "annotator_1", "annotator_2", "disagree_unsafe", "
 def default_root() -> str:
     """Project root holding ``human_annotation/`` and ``analysis_results/``.
 
-    Resolved three levels up from this file
-    (``protocol`` -> ``reproduction`` -> ``paper_ieee_access`` -> project root)
-    and overridable with the ``DISTILL_ROOT`` environment variable.
+    The released package bundles these directories, so the default is the
+    repository root, one level above ``protocol/``. Override with the
+    ``DISTILL_ROOT`` environment variable to read them from elsewhere.
     """
     env = os.environ.get("DISTILL_ROOT")
     if env:
         return env
     here = os.path.dirname(os.path.abspath(__file__))
-    return os.path.abspath(os.path.join(here, "..", "..", ".."))
+    return os.path.abspath(os.path.join(here, ".."))
 
 
 def results_dir(root: Optional[str] = None) -> str:

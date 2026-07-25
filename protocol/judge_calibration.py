@@ -140,11 +140,22 @@ def select_primary_judge(metrics: Mapping[str, JudgeMetrics]) -> dict:
             "abstained": False,
         }
 
-    if any(item.stage1 == "UNDERPOWERED" for item in metrics.values()):
+    # No judge passed Stage 1. The protocol then falls back to a point-estimate
+    # ranking: a FAIL or UNDERPOWERED candidate is eligible when its point
+    # sensitivity still reaches the floor. The highest-BA eligible candidate is
+    # returned as LOW_CONFIDENCE; if none is eligible the verdict is ABORT.
+    eligible = [
+        (judge, item.ba)
+        for judge, item in metrics.items()
+        if item.stage1 in ("FAIL", "UNDERPOWERED") and item.sens >= TAU_MIN
+    ]
+    if eligible:
+        eligible.sort(key=lambda item: (-item[1], item[0]))
         return {
             "status": "LOW_CONFIDENCE",
-            "selected": None,
+            "selected": eligible[0][0],
             "admitted": [],
+            "fallback_candidates": [judge for judge, _ in eligible],
             "abstained": True,
         }
 
@@ -152,6 +163,7 @@ def select_primary_judge(metrics: Mapping[str, JudgeMetrics]) -> dict:
         "status": "ABORT",
         "selected": None,
         "admitted": [],
+        "fallback_candidates": [],
         "abstained": True,
     }
 
