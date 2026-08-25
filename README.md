@@ -126,3 +126,14 @@ metrics = {
 }
 print(select_primary_judge(metrics))  # -> {'status': ..., 'selected': ..., ...}
 ```
+
+## Citation
+
+```bibtex
+@article{skrtrl, 
+  title   = {Auditable LLM Safety-Judge Selection via Confidence-Interval Filtering on Unsafe Recall}, 
+  author  = {Jixiang Yang and Junfei Yi and Jinhan Li and Shengjie Ma}, 
+  journal = {IEEE Access}, 
+  year    = {2026}
+}
+```
