@@ -127,6 +127,10 @@ metrics = {
 print(select_primary_judge(metrics))  # -> {'status': ..., 'selected': ..., ...}
 ```
 
+## Acknowledgement
+
+This work was supported in part by the National Natural Science Foundation of China under Grant 22374086, and in part by the National Key Research and Development Program of China under Grant 2023YFF0612100.
+
 ## Citation
 
 ```bibtex
