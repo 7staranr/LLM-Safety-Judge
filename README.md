@@ -136,7 +136,7 @@ This work was supported in part by the National Natural Science Foundation of Ch
 ```bibtex
 @article{llmjudgeci, 
   title   = {Auditable LLM Safety-Judge Selection via Confidence-Interval Filtering on Unsafe Recall}, 
-  author  = {Jixiang Yang and Junfei Yi and Jinhan Li and Shengjie Ma}, 
+  author  = {Jixiang Yang, Junfei Yi, Jinhan Li and Shengjie Ma}, 
   journal = {IEEE Access}, 
   year    = {2026}
 }
