@@ -1,6 +1,6 @@
 # Auditable LLM Safety-Judge Selection via Confidence-Interval Filtering on Unsafe Recall
 
-[![banner](paper-banner.png)](https://example.com/profile)
+[![banner](paper-banner.png)](https://doi.org/10.1109/access.2026.3726251)
 
 Reproduction code for the paper **Auditable LLM Safety-Judge Selection via
 Confidence-Interval Filtering on Unsafe Recall**.
